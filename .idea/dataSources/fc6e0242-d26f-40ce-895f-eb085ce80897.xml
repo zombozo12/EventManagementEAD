@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="db_eventmanagement@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="db_eventmanagement">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="ci_adminlte_db"/>
+    <schema id="4" parent="1" name="database_raport"/>
+    <schema id="5" parent="1" name="db_adlinkfly"/>
+    <schema id="6" parent="1" name="db_adminlte"/>
+    <schema id="7" parent="1" name="db_beevention"/>
+    <schema id="8" parent="1" name="db_beeventionlar"/>
+    <schema id="9" parent="1" name="db_bitexchanger"/>
+    <schema id="10" parent="1" name="db_bmc"/>
+    <schema id="11" parent="1" name="db_codeanalysis"/>
+    <schema id="12" parent="1" name="db_codeinteger"/>
+    <schema id="13" parent="1" name="db_comic"/>
+    <schema id="14" parent="1" name="db_danalangit"/>
+    <schema id="15" parent="1" name="db_dungeon"/>
+    <schema id="16" parent="1" name="db_epulsa"/>
+    <schema id="17" parent="1" name="db_goglam"/>
+    <schema id="18" parent="1" name="db_gw2boi"/>
+    <schema id="19" parent="1" name="db_iuran"/>
+    <schema id="20" parent="1" name="db_jancok"/>
+    <schema id="21" parent="1" name="db_javasec"/>
+    <schema id="22" parent="1" name="db_json"/>
+    <schema id="23" parent="1" name="db_kingmedia"/>
+    <schema id="24" parent="1" name="db_koperasi"/>
+    <schema id="25" parent="1" name="db_linebot"/>
+    <schema id="26" parent="1" name="db_lineundercover"/>
+    <schema id="27" parent="1" name="db_mariles"/>
+    <schema id="28" parent="1" name="db_mitrasoft"/>
+    <schema id="29" parent="1" name="db_movie"/>
+    <schema id="30" parent="1" name="db_mtdb"/>
+    <schema id="31" parent="1" name="db_newbot"/>
+    <schema id="32" parent="1" name="db_osubot"/>
+    <schema id="33" parent="1" name="db_penjualan"/>
+    <schema id="34" parent="1" name="db_poliklinik"/>
+    <schema id="35" parent="1" name="db_resortpanda"/>
+    <schema id="36" parent="1" name="db_sekolahku"/>
+    <schema id="37" parent="1" name="db_shortlink"/>
+    <schema id="38" parent="1" name="db_showus"/>
+    <schema id="39" parent="1" name="db_smk"/>
+    <schema id="40" parent="1" name="db_snmptn"/>
+    <schema id="41" parent="1" name="db_sysbook"/>
+    <schema id="42" parent="1" name="db_tabungan"/>
+    <schema id="43" parent="1" name="db_test"/>
+    <schema id="44" parent="1" name="db_timetable"/>
+    <schema id="45" parent="1" name="db_ujian"/>
+    <schema id="46" parent="1" name="db_ujian1"/>
+    <schema id="47" parent="1" name="db_user"/>
+    <schema id="48" parent="1" name="db_wp"/>
+    <schema id="49" parent="1" name="db_wpshop"/>
+    <schema id="50" parent="1" name="film2"/>
+    <schema id="51" parent="1" name="gw2sdk"/>
+    <schema id="52" parent="1" name="information_schema"/>
+    <schema id="53" parent="1" name="isbogor"/>
+    <schema id="54" parent="1" name="klinik_db"/>
+    <schema id="55" parent="1" name="mobilebanking"/>
+    <schema id="56" parent="1" name="mysql"/>
+    <schema id="57" parent="1" name="panda"/>
+    <schema id="58" parent="1" name="performance_schema"/>
+    <schema id="59" parent="1" name="phpmyadmin"/>
+    <schema id="60" parent="1" name="test"/>
+    <table id="61" parent="2" name="tbl_event"/>
+    <table id="62" parent="2" name="tbl_rundown"/>
+    <table id="63" parent="2" name="tbl_user"/>
+    <column id="64" parent="61" name="evt_id">
+      <Position>1</Position>
+      <DataType>int(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="65" parent="61" name="evt_nama">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="66" parent="61" name="evt_deskripsi">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="67" parent="61" name="evt_tanggal">
+      <Position>4</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="68" parent="61" name="evt_poster">
+      <Position>5</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="69" parent="61" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>evt_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="70" parent="62" name="rdw_id">
+      <Position>1</Position>
+      <DataType>int(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="71" parent="62" name="evt_id">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="72" parent="62" name="rdw_tanggal">
+      <Position>3</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="73" parent="62" name="rdw_jam">
+      <Position>4</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="74" parent="62" name="rdw_deskripsi">
+      <Position>5</Position>
+      <DataType>varchar(500)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="75" parent="62" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>rdw_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="76" parent="63" name="usr_id">
+      <Position>1</Position>
+      <DataType>int(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="77" parent="63" name="usr_username">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="78" parent="63" name="usr_role">
+      <Position>3</Position>
+      <DataType>enum(&apos;Admin&apos;, &apos;EO&apos;, &apos;User&apos;)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="79" parent="63" name="usr_password">
+      <Position>4</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="80" parent="63" name="usr_email">
+      <Position>5</Position>
+      <DataType>varchar(254)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="81" parent="63" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>usr_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
