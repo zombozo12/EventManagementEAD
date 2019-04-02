@@ -29,13 +29,21 @@ class model{
           return false;
         }
 
+        if(strlen($email) > 254){
+            return array('message' => 'Batas panjang email adalah 254 karakter');
+        }
+
+        if(strlen($password > 100)){
+            return array('message' => 'Batas panjang password adalah 100 karakter');
+        }
+
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
           return array ('message' => 'Masukkan user dengan benar.');
         }
 
         $password_hash = hash('sha256', $this->salt, $password);
 
-        $login = $this->connect-prepare('SELECT usr_username FROM tbl_user WHERE usr_email = ? AND usr_password = ?')
+        $login = $this->connect->prepare('SELECT usr_username FROM tbl_user WHERE usr_email = ? AND usr_password = ?');
         $login->bind_param('ss', $email, $password_hash);
         $login->execute();
         $login->store_result();
@@ -60,10 +68,21 @@ class model{
         $repassword = mysqli_real_escape_string($this->connect, $repassword);
         $role     = mysqli_real_escape_string($this->connect, $role);
 
-        //Ini untuk mengecek password dan password konfirmasi
         if($password !== $repassword){
+            return array(
+                'status' => 0,
+                'message' => 'Password tidak sama
+                ');
+        }
+
+        $register = $this->connect->prepare('INSERT INTO tbl_user(usr_username, usr_role, usr_password, usr_email) VALUES(?,?,?,?)');
+        $register->bind_param('ssss', $username, $role, $password, $email);
+        $register->execute();
+        $register->store_result();
+        if($register->affected_rows == 0){
             return false;
         }
+        return true;
     }
 }
 
