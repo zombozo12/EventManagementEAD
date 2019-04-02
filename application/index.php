@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<?php
+    include '../model.php';
+    use ead\model;
+
+    $initDb = model\model::initDatabase();
+?>
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Cardio: Free One Page Template by Luka Cvetinovic</title>
+	<title>Event Management EAD</title>
 	<meta name="description" content="Cardio is a free one page template made exclusively for Codrops by Luka Cvetinovic" />
 	<meta name="keywords" content="html template, css, free, one page, gym, fitness, web design" />
 	<meta name="author" content="Luka Cvetinovic for Codrops" />
@@ -54,11 +61,11 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right main-nav">
-					<li><a href="#intro">Intro</a></li>
+					<li><a href="#intro">Home</a></li>
 					<li><a href="#pricing">Event</a></li>
 					<li><a href="#yyy">About Us</a></li>
-					<li><a href="#hhh">Register</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Login</a></li>
+					<li><a href="#hhh">Sign Up</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Sign In</a></li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -99,7 +106,7 @@
 						</div>
 						<div class="box-second active text-left">
 							<h4 class="white">Deskripsi</h4>
-							<p class="white" font-size: 18px>Deskripsi Event 1</p>
+							<p class="white">Deskripsi Event 1</p>
 						</div>
 						<div class="box-third active">
 							<img src="img/team/team3.jpg" alt="Team Image" class="avatar">
@@ -114,7 +121,7 @@
 						</div>
 						<div class="box-second">
 							<h4 class="white">Deskripsi</h4>
-							<p class="white" font-size: 18px>Deskripsi Event 1</p>
+							<p class="white">Deskripsi Event 1</p>
 						</div>
 						<div class="box-third active">
 							<ul class="white-list text-left">
@@ -134,7 +141,7 @@
 							</div>
 							<div class="box-second">
 								<h4 class="white">Deskripsi</h4>
-								<p class="white" font-size: 18px>Deskripsi Event 1</p>
+								<p class="white">Deskripsi Event 1</p>
 							</div>
 							<div class="box-third active">
 								<ul class="white-list text-left">
@@ -164,7 +171,8 @@
 						</div>
 						<div class="item text-center">
 							<a href="https://www.instagram.com/ead.fse/?hl=en"><i class="icon fa fa-instagram"></i>
-							<h4 class="white light">Instagram</h4>
+								<h4 class="white light">Instagram</h4>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -175,11 +183,11 @@
 		<div class="modal-dialog">
 			<div class="modal-content modal-popup">
 				<a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
-				<h3 class="white">Log In</h3>
-				<form action="" class="popup-form">
-					<input type="text" class="form-control form-white" placeholder="Username">
-					<input type="Password" class="form-control form-white" placeholder="Password">
-					<button type="submit" class="btn btn-submit">Log In</button>
+				<h3 class="white">Sign In</h3>
+				<form action="" method="post" class="popup-form">
+					<input type="email" name="inEmail" class="form-control form-white" placeholder="Email">
+					<input type="Password" name="inPassword" class="form-control form-white" placeholder="Password">
+					<button type="submit" name="btnLogin" class="btn btn-submit">Sign In</button>
 				</form>
 			</div>
 		</div>
@@ -188,31 +196,31 @@
 		<div id="hhh" class="container">
 			<div class="row">
 				<div class="col-sm-6 text-center-mobile">
-					<h3 class="white">Reserve a Free Trial Class!</h3>
+					<!--<h3 class="white">Reserve a Free Trial Class!</h3>
 					<h5 class="light regular light-white">Shape your body and improve your health.</h5>
-					<a href="#" class="btn btn-blue ripple trial-button">Start Free Trial</a>
+					<a href="#" class="btn btn-blue ripple trial-button">Start Free Trial</a>-->
 				</div>
 				<div class="col-sm-6 text-center-mobile">
-					<h3 id="ha" class="white" class="text-center">Register <span class="open-blink"></span></h3>
-					<form action="" class="popup-form">
-						<input type="text" class="form-control form-white" placeholder="Fullname">
-						<input type="text" class="form-control form-white" placeholder="Email">
-						<input type="text" class="form-control form-white" placeholder="id Line">
-						<input type="Password" class="form-control form-white" placeholder="Password">
-						<input type="Password" class="form-control form-white" placeholder="Confirm Password">
-						<button type="submit" class="btn btn-submit">Register</button>
+					<h3 id="ha" class="white text-center">Sign Up <span class="open-blink"></span></h3>
+					<form action="" method="post" class="popup-form">
+						<!--<input type="text" class="form-control form-white" name="inFullname" placeholder="Fullname">-->
+						<input type="text" class="form-control form-white" name="inUsername" placeholder="Username">
+						<input type="email" class="form-control form-white" name="inEmail" placeholder="Email">
+						<input type="password" class="form-control form-white" name="inPassword" placeholder="Password">
+						<input type="password" class="form-control form-white" name="inConfirmPassword" placeholder="Confirm Password">
+						<button type="submit" class="btn btn-submit" name="btnRegister">Sign Up</button>
 					</form>
 				</div>
 			</div>
 			<div class="row bottom-footer text-center-mobile">
 				<div class="col-sm-8">
-					<p>&copy; 2015 All Rights Reserved. Powered by <a href="http://www.phir.co/">PHIr</a> exclusively for <a href="http://tympanus.net/codrops/">Codrops</a></p>
+					<p>&copy; 2019 All Rights Reserved. Powered by Kelompok 4</p>
 				</div>
 				<div class="col-sm-4 text-right text-center-mobile">
 					<ul class="social-footer">
-						<li><a href="http://www.facebook.com/pages/Codrops/159107397912"><i class="icon fa fa-facebook"></i></a></li>
-						<li><a href="http://www.twitter.com/codrops"><i class="icon fa fa-twitter"></i></a></li>
-						<li><a href="https://plus.google.com/101095823814290637419"><i class="icon fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="icon fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="icon fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="icon fa fa-google-plus"></i></a></li>
 					</ul>
 				</div>
 			</div>
@@ -233,5 +241,43 @@
 	<script src="js/jquery.onepagenav.js"></script>
 	<script src="js/main.js"></script>
 </body>
+<?php
+    if(isset($_POST['btnLogin'])){
+        $email    = $_POST['inEmail'];
+        $password = $_POST['inPassword'];
 
+        $login = $initDb->login($email, $password);
+
+        if(is_array($login)){
+            echo '<script>alert("'. $login["message"] .'")</script>';
+            return;
+        }
+
+        if($login){
+            echo '<script>alert("Login Success")</script>';
+            return;
+        }
+        echo '<script>alert("Login Failed")</script>';
+    }
+
+    if(isset($_POST['btnRegister'])){
+        $username  = $_POST['inUsername'];
+        $email     = $_POST['inEmail'];
+        $password  = $_POST['inPassword'];
+        $cpassword = $_POST['inConfirmPassword'];
+
+        $register = $initDb->register($email, $username, $password, $cpassword);
+
+        if(is_array($register)){
+            echo '<script>alert("'. $register["message"] .'")</script>';
+            return;
+        }
+
+        if($register){
+            echo '<script>alert("Register Success")</script>';
+            return;
+        }
+        echo '<script>alert("Register Failed")</script>';
+    }
+?>
 </html>
