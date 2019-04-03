@@ -112,6 +112,67 @@ class model{
 
         return true;
     }
+
+    public function addEvent($nama, $deskripsi, $tanggal, $poster){
+        $nama      = mysqli_real_escape_string($this->connect, $nama);
+        $deskripsi = mysqli_real_escape_string($this->connect, $deskripsi);
+        $tanggal   = mysqli_real_escape_string($this->connect, $tanggal);
+        $poster    = mysqli_real_escape_string($this->connect, $poster);
+
+        $add = $this->connect->prepare('INSERT INTO tbl_event(evt_nama, evt_deskripsi, evt_tanggal, evt_poster) VALUES(?,?,?,?)');
+        $add->bind_param('ssis', $nama, $deskripsi, $tanggal, $poster);
+        $add->execute();
+        $add->store_result();
+        if($add->affected_rows == 0){
+            return false;
+        }
+        return true;
+    }
+
+    public function deleteEvent($evt_id){
+        $evt_id = mysqli_real_escape_string($this->connect, $evt_id);
+
+        $delete = $this->connect->prepare('DELETE FROM tbl_event WHERE evt_id = ?');
+        $delete->bind_param('i', $evt_id);
+        $delete->execute();
+        $delete->store_result();
+        if($delete->affected_rows == 0){
+            return false;
+        }
+        return true;
+    }
+
+    public function updateEvent($evt_id, $evt_nama, $evt_deskrpsi, $evt_tanggal, $evt_poster){
+        $evt_id       = mysqli_real_escape_string($this->connect, $evt_id);
+        $evt_nama     = mysqli_real_escape_string($this->connect, $evt_nama);
+        $evt_deskrpsi = mysqli_real_escape_string($this->connect, $evt_deskrpsi);
+        $evt_tanggal  = mysqli_real_escape_string($this->connect, $evt_tanggal);
+        $evt_poster   = mysqli_real_escape_string($this->connect, $evt_poster);
+
+        $update = $this->connect->prepare('UPDATE tbl_event SET evt_nama = ?, evt_deskripsi = ?, evt_tanggal = ?, evt_poster = ? WHERE evt_id = ?');
+        $update->bind_param('ssisi', $evt_id, $evt_nama, $evt_deskrpsi, $evt_tanggal, $evt_poster);
+        $update->execute();
+        $update->store_result();
+        if($update->affected_rows == 0){
+            return false;
+        }
+        return true;
+    }
+
+    public function pendaftaranEventAuto($usr_id, $evt_id, $epf_jumlah){
+        $usr_id = mysqli_real_escape_string($this->connect, $usr_id);
+        $evt_id = mysqli_real_escape_string($this->connect, $evt_id);
+        $epf_jumlah = mysqli_real_escape_string($this->connect, $epf_jumlah);
+
+        $daftar = $this->connect->prepare('INSERT INTO tbl_eventpendf(usr_id, evt_id, epf_jumlah) VALUES(?,?,?)');
+        $daftar->bind_param('iii', $usr_id, $evt_id, $epf_jumlah);
+        $daftar->execute();
+        $daftar->store_result();
+        if($daftar->affected_rows == 0){
+            return false;
+        }
+        return true;
+    }
 }
 
 ?>
