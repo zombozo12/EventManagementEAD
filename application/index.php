@@ -34,29 +34,145 @@
 	<section id="pricing" class="section">
 		<div class="container">
 			<div class="row title text-left">
-				<h2 class="margin-top white">Latest Event</h2>
+				<h2 class="margin-top white">Pelatihan</h2>
 			</div>
 			<div class="row no-margin">
 				<div class="col-md-7 no-padding col-md-offset-5 pricings text-center">
+          <div class="pricing">
+            <div class="box-main active" data-img="img/coding.jpg">
+              <h4 class="white">EVENT 1</h4>
+              <br></br>
+							<h6 class="white regular light"> Hari/Tanggal : Jumat, 5 April 2019 </h6>
+              <h6 class="white regular light"> Jam : 18.00 - 21.00 WIT </h6>
+              <h6 class="white regular light"> Tempat : Gedung B Telkom University </h6>
+              <h6 class="white regular light"> CP : Wiguna </h6>
+              <a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-white-fill">Daftar</a>
+              <i class="info-icon icon_question"></i>
+            </div>
+            <div class="box-second active text-center">
+              <h4 class="white">DESKRIPSI</h4>
+              <p class="white" font-size: 18px>Prodase Talk adalah kalimat yang kalimat dimana semua kalimat disini tidak berguna akan diisikan deskripsi tentang event yang diinginkan sesuai sudah di input</p>
+            </div>
+            <div class="box-third active">
+              <h4 class="white">PEMBICARA</h4>
+              <<br></br>
+              <img src="img/team/wiguna.png" alt="Team Image" class="avatar">
+              <h5 class="white regular light" text-center>Wiguna Ramadhan</h5>
+              <br></br>
+              <img src="img/team/wiguna.png" alt="Team Image" class="avatar">
+              <h5 class="white regular light" text-center>Wiguna Ramadhan</h5>
+            </div>
+          </div>
+
 					<div class="pricing">
-						<div class="box-main active" data-img="img/pricing1.jpg">
-							<h4 class="white">EVENT 1</h4>
-							<h4 class="white regular light"> Quotes </h4>
+						<div class="box-main" data-img="img/coding.jpg">
+							<h4 class="white">Event 1</h4>
+              <br></br>
+							<h6 class="white regular light"> Hari/Tanggal : Jumat, 5 April 2019 </h6>
+              <h6 class="white regular light"> Jam : 18.00 - 21.00 WIT </h6>
+              <h6 class="white regular light"> Tempat : Gedung B Telkom University </h6>
+              <h6 class="white regular light"> CP : Wiguna </h6>
 							<a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-white-fill">Daftar</a>
 							<i class="info-icon icon_question"></i>
 						</div>
-						<div class="box-second active text-left">
+						<div class="box-second">
 							<h4 class="white">Deskripsi</h4>
-							<p class="white">Deskripsi Event 1</p>
+							<p class="white" font-size: 18px>Prodase Talk adalah kalimat yang kalimat dimana semua kalimat disini tidak berguna akan diisikan deskripsi tentang event yang diinginkan sesuai sudah di input</p>
 						</div>
 						<div class="box-third active">
-							<img src="img/team/team3.jpg" alt="Team Image" class="avatar">
+              <h4 class="white">PEMBICARA</h4>
+              <br></br>
+              <img src="img/team/wiguna.png" alt="Team Image" class="avatar">
+              <h5 class="white regular light" text-center>Wiguna Ramadhan</h5>
 						</div>
+          </div>
+
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+
+  <section id="pricing1" class="section">
+		<div class="container">
+			<div class="row title text-left">
+				<h2 class="margin-top white">Seminar</h2>
+			</div>
+			<div class="row no-margin">
+				<div class="col-md-7 no-padding col-md-offset-5 pricings text-center">
+
+          <div class="pricing1">
+            <div class="box-main active" data-img="img/seminar.jpg">
+              <h4 class="white">EVENT 1</h4>
+              <br></br>
+							<h6 class="white regular light"> Hari/Tanggal : Jumat, 5 April 2019 </h6>
+              <h6 class="white regular light"> Jam : 18.00 - 21.00 WIT </h6>
+              <h6 class="white regular light"> Tempat : Gedung B Telkom University </h6>
+              <h6 class="white regular light"> CP : Wiguna </h6>
+              <a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-white-fill">Daftar</a>
+              <i class="info-icon icon_question"></i>
+            </div>
+            <div class="box-second active text-center">
+              <h4 class="white">DESKRIPSI</h4>
+              <p class="white" font-size: 18px>Prodase Talk adalah kalimat yang kalimat dimana semua kalimat disini tidak berguna akan diisikan deskripsi tentang event yang diinginkan sesuai sudah di input</p>
+            </div>
+            <div class="box-third active">
+              <h4 class="white">PEMBICARA</h4>
+              <br></br>
+              <img src="img/team/wiguna.png" alt="Team Image" class="avatar">
+              <h5 class="white regular light" text-center>Wiguna Ramadhan</h5>
+            </div>
+          </div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+  <section id="pricing2" class="section">
+		<div class="container">
+			<div class="row title text-left">
+				<h2 class="margin-top white">Pengabdian Masyarakat</h2>
+			</div>
+			<div class="row no-margin">
+				<div class="col-md-7 no-padding col-md-offset-5 pricings text-center">
+
+          <div class="pricing2">
+            <div class="box-main active" data-img="img/coding.jpg">
+              <h4 class="white">EVENT 1</h4>
+              <br></br>
+							<h6 class="white regular light"> Hari/Tanggal : Jumat, 5 April 2019 </h6>
+              <h6 class="white regular light"> Jam : 18.00 - 21.00 WIT </h6>
+              <h6 class="white regular light"> Tempat : Gedung B Telkom University </h6>
+              <h6 class="white regular light"> CP : Wiguna </h6>
+              <a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-white-fill">Daftar</a>
+              <i class="info-icon icon_question"></i>
+            </div>
+            <div class="box-second active text-center">
+              <h4 class="white">DESKRIPSI</h4>
+              <p class="white" font-size: 18px>Prodase Talk adalah kalimat yang kalimat dimana semua kalimat disini tidak berguna akan diisikan deskripsi tentang event yang diinginkan sesuai sudah di input</p>
+            </div>
+            <div class="box-third active">
+              <h4 class="white">PEMBICARA</h4>
+              <br></br>
+              <img src="img/team/wiguna.png" alt="Team Image" class="avatar">
+              <h5 class="white regular light" text-center>Wiguna Ramadhan</h5>
+              <br></br>
+              <img src="img/team/wiguna.png" alt="Team Image" class="avatar">
+              <h5 class="white regular light" text-center>Wiguna Ramadhan</h5>
+            </div>
+          </div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
 
 	<section class="section section-padded blue-bg">
 		<div class="container">
@@ -112,9 +228,10 @@
 		<div id="hhh" class="container">
 			<div class="row">
 				<div class="col-sm-6 text-center-mobile">
-					<!--<h3 class="white">Reserve a Free Trial Class!</h3>
-					<h5 class="light regular light-white">Shape your body and improve your health.</h5>
-					<a href="#" class="btn btn-blue ripple trial-button">Start Free Trial</a>-->
+					<h3 class="white">About Us</h3>
+          <br></br>
+					<p class="light regular light-white">Kelompok 4 adalah kelompok Rekruitasi EAD Laboratory 2019 yang dibuat untuk melakukan tahap project pembuatan web. Kelompok 4 terdiri dari mahasiswa dan mahasiswi Telkom University yang berada di Jurusan Sistem Informasi, Fakultas Rekayasa Industri. Kami membuat website ini bertujuan untuk menambah pengalaman dan pengetahuan dalam pembuatan web ini<p>
+					<a href="#" class="btn btn-blue ripple trial-button">Start Free Trial</a>
 				</div>
 				<div class="col-sm-6 text-center-mobile">
 					<h3 id="ha" class="white text-center">Join us for Newsletter<span class="open-blink"></span></h3>
