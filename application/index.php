@@ -3,75 +3,16 @@
 
 <?php
     include '../model.php';
+
+    require 'vendor/autoload.php';
     use ead\model;
 
     $initDb = model\model::initDatabase();
+
+    include 'core/header.php';
 ?>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Event Management EAD</title>
-	<meta name="description" content="Cardio is a free one page template made exclusively for Codrops by Luka Cvetinovic" />
-	<meta name="keywords" content="html template, css, free, one page, gym, fitness, web design" />
-	<meta name="author" content="Kelompok 4" />
-	<!-- Favicons (created with http://realfavicongenerator.net/)-->
-	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-	<link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="img/favicons/manifest.json">
-	<link rel="shortcut icon" href="img/favicons/favicon.ico">
-	<meta name="msapplication-TileColor" content="#00a8ff">
-	<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
-	<meta name="theme-color" content="#ffffff">
-	<!-- Normalize -->
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<!-- Bootstrap -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<!-- Owl -->
-	<link rel="stylesheet" type="text/css" href="css/owl.css">
-	<!-- Animate.css -->
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.1.0/css/font-awesome.min.css">
-	<!-- Elegant Icons -->
-	<link rel="stylesheet" type="text/css" href="fonts/eleganticons/et-icons.css">
-	<!-- Main style -->
-	<link rel="stylesheet" type="text/css" href="css/cardio.css">
-</head>
 
-<body>
-	<div class="preloader">
-		<img src="img/loader.gif" alt="Preloader image">
-	</div>
-	<nav class="navbar">
-		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#"><img src="img/logo.png" data-active-url="img/logo-active.png" alt=""></a>
-			</div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right main-nav">
-					<li><a href="#intro">Home</a></li>
-					<li><a href="#pricing">Event</a></li>
-					<li><a href="#yyy">About Us</a></li>
-					<li><a href="#hhh">Sign Up</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Sign In</a></li>
-				</ul>
-			</div>
-			<!-- /.navbar-collapse -->
-		</div>
-		<!-- /.container-fluid -->
-	</nav>
 	<header id="intro">
 		<div class="container">
 			<div class="table">
@@ -253,6 +194,7 @@
 			</div>
 		</div>
 	</section>
+
 	<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content modal-popup">
@@ -266,6 +208,22 @@
 			</div>
 		</div>
 	</div>
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-popup">
+                <a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
+                <h3 class="white">Sign Up</h3>
+                <form action="" method="post" class="popup-form">
+                    <input type="text" class="form-control form-white" name="inFullname" placeholder="Fullname">
+                    <input type="text" class="form-control form-white" name="inUsername" placeholder="Username">
+                    <input type="email" class="form-control form-white" name="inEmail" placeholder="Email">
+                    <input type="password" class="form-control form-white" name="inPassword" placeholder="Password">
+                    <input type="password" class="form-control form-white" name="inConfirmPassword" placeholder="Confirm Password">
+                    <button type="submit" class="btn btn-submit" name="btnRegister">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
 	<footer>
 		<div id="hhh" class="container">
 			<div class="row">
@@ -276,14 +234,10 @@
 					<a href="#" class="btn btn-blue ripple trial-button">Start Free Trial</a>
 				</div>
 				<div class="col-sm-6 text-center-mobile">
-					<h3 id="ha" class="white text-center">Team</h3>
+					<h3 id="ha" class="white text-center">Join us for Newsletter<span class="open-blink"></span></h3>
 					<form action="" method="post" class="popup-form">
-						<!--<input type="text" class="form-control form-white" name="inFullname" placeholder="Fullname">-->
-						<input type="text" class="form-control form-white" name="inUsername" placeholder="Username">
 						<input type="email" class="form-control form-white" name="inEmail" placeholder="Email">
-						<input type="password" class="form-control form-white" name="inPassword" placeholder="Password">
-						<input type="password" class="form-control form-white" name="inConfirmPassword" placeholder="Confirm Password">
-						<button type="submit" class="btn btn-submit" name="btnRegister">Sign Up</button>
+						<button type="submit" class="btn btn-submit" name="btnNewsletter">Subscribe</button>
 					</form>
 				</div>
 			</div>
@@ -324,15 +278,16 @@
         $login = $initDb->login($email, $password);
 
         if(is_array($login)){
-            echo '<script>alert("'. $login["message"] .'")</script>';
-            return;
+            echo '<script>alert("'. $login[0] .'")</script>';
         }
 
-        if($login){
-            echo '<script>alert("Login Success")</script>';
-            return;
+        if(empty($login)){
+            echo '<script>alert("Login Failed")</script>';
         }
-        echo '<script>alert("Login Failed")</script>';
+
+        $sessionManager->register(60);
+        $sessionManager->set('current_user', $login[0]);
+
     }
 
     if(isset($_POST['btnRegister'])){
@@ -353,6 +308,21 @@
             return;
         }
         echo '<script>alert("Register Failed")</script>';
+    }
+
+    if(isset($_POST['btnNewsletter'])){
+        $email = $_POST['inEmail'];
+
+        $newsletter = $initDb->newsletter($email);
+
+        if(is_array($newsletter)){
+            echo '<script>alert("'. $newsletter["message"] .'")</script>';
+        }
+
+        if($newsletter){
+            echo '<script>alert("Thank you")</script>';
+            return;
+        }
     }
 ?>
 </html>

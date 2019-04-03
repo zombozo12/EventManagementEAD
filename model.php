@@ -53,7 +53,13 @@ class model{
         if ($login->num_rows == 0) {
           return false;
         }
-        return true;
+
+        $loginDetail['log_detail'] = array();
+        $login->bind_result($usrUsername);
+        while($login->fetch()){
+            array_push($loginDetail['log_detail'], $usrUsername);
+        }
+        return $loginDetail['log_detail'];
     }
 
     public function register($email, $username, $password, $repassword, $role = 'User'){
@@ -80,6 +86,32 @@ class model{
         }
         return true;
     }
+
+    public function newsletter($email){
+        $email = mysqli_real_escape_string($this->connect, $email);
+
+        if (empty($email)) {
+            return false;
+        }
+
+        if(strlen($email) > 254){
+            return array('message' => 'Batas panjang email adalah 254 karakter');
+        }
+
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            return array ('message' => 'Masukkan user dengan benar.');
+        }
+
+        $newsletter = $this->connect->prepare('INSERT INTO tbl_newsletter(new_email) VALUES(?)');
+        $newsletter->bind_param('s', $email);
+        $newsletter->execute();
+        $newsletter->store_result();
+        if($newsletter->affected_rows == 0){
+            return false;
+        }
+
+        return true;
+    }
 }
 
- ?>
+?>
