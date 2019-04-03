@@ -34,7 +34,7 @@
 	<section id="pricing" class="section">
 		<div class="container">
 			<div class="row title text-left">
-				<h2 class="margin-top white">Event</h2>
+				<h2 class="margin-top white">Latest Event</h2>
 			</div>
 			<div class="row no-margin">
 				<div class="col-md-7 no-padding col-md-offset-5 pricings text-center">
@@ -117,14 +117,10 @@
 					<a href="#" class="btn btn-blue ripple trial-button">Start Free Trial</a>-->
 				</div>
 				<div class="col-sm-6 text-center-mobile">
-					<h3 id="ha" class="white text-center">Newsletter<span class="open-blink"></span></h3>
+					<h3 id="ha" class="white text-center">Join us for Newsletter<span class="open-blink"></span></h3>
 					<form action="" method="post" class="popup-form">
-						<!--<input type="text" class="form-control form-white" name="inFullname" placeholder="Fullname">-->
-						<input type="text" class="form-control form-white" name="inUsername" placeholder="Username">
 						<input type="email" class="form-control form-white" name="inEmail" placeholder="Email">
-						<input type="password" class="form-control form-white" name="inPassword" placeholder="Password">
-						<input type="password" class="form-control form-white" name="inConfirmPassword" placeholder="Confirm Password">
-						<button type="submit" class="btn btn-submit" name="btnRegister">Sign Up</button>
+						<button type="submit" class="btn btn-submit" name="btnNewsletter">Subscribe</button>
 					</form>
 				</div>
 			</div>
@@ -195,6 +191,21 @@
             return;
         }
         echo '<script>alert("Register Failed")</script>';
+    }
+
+    if(isset($_POST['btnNewsletter'])){
+        $email = $_POST['inEmail'];
+
+        $newsletter = $initDb->newsletter($email);
+
+        if(is_array($newsletter)){
+            echo '<script>alert("'. $newsletter["message"] .'")</script>';
+        }
+
+        if($newsletter){
+            echo '<script>alert("Thank you")</script>';
+            return;
+        }
     }
 ?>
 </html>
