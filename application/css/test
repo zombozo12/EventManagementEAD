@@ -1,0 +1,139 @@
+#pricing2 {
+	background: #00a8ff url('../img/coding.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-transition: background-image 0.6s linear 0.3s;
+	transition: background-image 0.6s linear 0.3s;
+}
+
+.owl-pricing2 img {
+	width: 100%;
+}
+
+.owl-pricing2,
+.pricings {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.pricing2 {
+	position: relative;
+	width: 100%;
+}
+
+.pricings .pricing2 .box-main,
+.pricings .pricing2 .box-third,
+.pricings .pricing2 .box-second {
+	position: relative;
+	left: 25%;
+	display: inline-block;
+	width: 57%;
+	height: 500px;
+	padding: 50px 40px;
+	background: #bbb;
+	-webkit-transition: -webkit-transform 0.3s, background-image 0.3s, opacity 0.3s;
+	transition: transform 0.3s, background-image 0.3s, opacity 0.3s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.pricings .pricing2 .box-main {
+	z-index: 10;
+	padding-top: 50px;
+}
+
+.pricings .pricing2 .box-main:not(.active) {
+	cursor: pointer;
+}
+
+.pricings .pricing2 .box-main .info-icon {
+	font-size: 14px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	pointer-events: none;
+	opacity: 0;
+	color: #fff;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.pricings .pricing2 .box-main:not(.active) .info-icon {
+	opacity: 1;
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.pricings .pricing2 .box-main:not(.active):hover {
+	background: #afafaf;
+}
+
+.pricings .pricing2 .box-main.active {
+	background: #00a8ff;
+	-webkit-transform: translateX(-200%);
+	-ms-transform: translateX(-200%);
+	transform: translateX(-200%);
+}
+
+.pricings .pricing2 .box-second.active {
+	background: #00a8ff;
+	-webkit-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	transform: translateX(-100%);
+}
+
+.pricings .pricing2 .box-third.active {
+	background: #00a8ff;
+	-webkit-transform: translateX(-0%);
+	-ms-transform: translateX(-0%);
+	transform: translateX(-0%);
+}
+
+.pricings .pricing2 .box-second {
+	position: absolute;
+	top: 0;
+	right: 0% !important;
+	left: auto;
+	opacity: 0;
+	background: #afafaf;
+}
+
+.pricings .pricing2 .box-second.active {
+	opacity: 1;
+	background: #00a8ff;
+}
+
+.pricings .pricing2 .box-third {
+	position: absolute;
+	top: 0;
+	right: 0% !important;
+	left: auto;
+	opacity: 0;
+	background: #afafaf;
+}
+
+.pricings .pricing2 .box-third.active {
+	opacity: 1;
+	background: #00a8ff;
+}
+
+.pricings .pricing2.active .box-main,
+.pricings .pricing2 .box-second,
+.pricings .pricing2 .box-third {
+	background: #00a8ff;
+}
+
+.pricings .pricing2 .box-main a.btn {
+	margin-top: 150px;
+}
+
+.pricings .pricing2 .box-third img {
+	border-radius: 50%;
+	width: 100px;
+}
+
+.owl-twitter i.icon {
+	font-size: 36px;
+	margin-bottom: 60px;
+	color: white;
+}
