@@ -53,7 +53,13 @@ class model{
         if ($login->num_rows == 0) {
           return false;
         }
-        return true;
+
+        $loginDetail['log_detail'] = array();
+        $login->bind_result($usrUsername);
+        while($login->fetch()){
+            array_push($loginDetail['log_detail'], $usrUsername);
+        }
+        return $loginDetail['log_detail'];
     }
 
     public function register($email, $username, $password, $repassword, $role = 'User'){
@@ -82,4 +88,4 @@ class model{
     }
 }
 
- ?>
+?>
