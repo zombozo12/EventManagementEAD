@@ -212,14 +212,14 @@
         <div class="modal-dialog">
             <div class="modal-content modal-popup">
                 <a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
-                <h3 class="white">Sign Up</h3>
+                <h3 class="white">Register</h3>
                 <form action="" method="post" class="popup-form">
                     <input type="text" class="form-control form-white" name="inFullname" placeholder="Fullname">
                     <input type="text" class="form-control form-white" name="inUsername" placeholder="Username">
                     <input type="email" class="form-control form-white" name="inEmail" placeholder="Email">
                     <input type="password" class="form-control form-white" name="inPassword" placeholder="Password">
                     <input type="password" class="form-control form-white" name="inConfirmPassword" placeholder="Confirm Password">
-                    <button type="submit" class="btn btn-submit" name="btnRegister">Sign Up</button>
+                    <button type="submit" class="btn btn-submit" name="btnRegister">Create an account</button>
                 </form>
             </div>
         </div>

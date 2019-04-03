@@ -173,6 +173,23 @@ class model{
         }
         return true;
     }
+
+    public function pendaftaranEventManual($fullname, $email, $phonenum, $jumlah){
+        $fullname = mysqli_real_escape_string($this->connect, $fullname);
+        $email = mysqli_real_escape_string($this->connect, $email);
+        $phonenum = mysqli_real_escape_string($this->connect, $phonenum);
+        $jumlah = mysqli_real_escape_string($this->connect, $jumlah);
+
+        $daftar = $this->connect->prepare('INSERT INTO tbl_eventpendfmanual(evt_id, epm_nama, epm_email, epm_nohp) VALUES(?,?,?,?)');
+        $daftar->bind_param('issi', $fullname, $email, $phonenum, $jumlah);
+        $daftar->execute();
+        $daftar->store_result();
+        if($daftar->affected_rows == 0){
+            return false;
+        }
+        return true;
+    }
+
 }
 
 ?>
