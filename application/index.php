@@ -61,7 +61,7 @@ $evt_id = 0;
                                            class="btn btn-white-fill">Ikut Event</a>';
                                 } else {
                                     $evt_id = $events['evt_id'];
-                                    echo '<a href="#" data-toggle="modal" data-target="#modal1"
+                                    echo '<a href="#" data-toggle="modal" data-target="#modal4"
                                            class="btn btn-white-fill">Daftar</a>';
                                 }
                                 ?>
@@ -70,7 +70,7 @@ $evt_id = 0;
                             <div class="box-second active text-center">
                                 <h4 class="white">DESKRIPSI</h4>
                                 <p class="white"><?php echo $events['evt_deskripsi']; ?></p>
-                                <a <?php echo 'href="events.php?id=' . $events['evt_id'] . '"'; ?>href="#"
+                                <a <?php echo 'href="eventdetails.php?id=' . $events['evt_id'] . '"'; ?>href="#"
                                    data-toggle="modal"
                                    class="btn btn-white-fill">Read more</a>
                             </div>
@@ -124,7 +124,7 @@ $evt_id = 0;
                                            class="btn btn-white-fill">Ikut Event</a>';
                                 } else {
                                     $evt_id = $events['evt_id'];
-                                    echo '<a href="#" data-toggle="modal" data-target="#modal1"
+                                    echo '<a href="#" data-toggle="modal" data-target="#modal4"
                                            class="btn btn-white-fill">Daftar</a>';
                                 }
                                 ?>
@@ -133,7 +133,7 @@ $evt_id = 0;
                             <div class="box-second active text-center">
                                 <h4 class="white">DESKRIPSI</h4>
                                 <p class="white"><?php echo $events['evt_deskripsi']; ?></p>
-                                <a <?php echo 'href="events.php?id=' . $events['evt_id'] . '"'; ?>href="#"
+                                <a <?php echo 'href="eventdetails.php?id=' . $events['evt_id'] . '"'; ?>href="#"
                                    data-toggle="modal"
                                    class="btn btn-white-fill">Read more</a>
                             </div>
@@ -189,11 +189,11 @@ $evt_id = 0;
                                 <?php
                                 if ($sessionManager->isRegistered()) {
                                     $evt_id = $events['evt_id'];
-                                    echo '<a href="#" data-toggle="modal" data-target="#modal1"
+                                    echo '<a href="#" data-toggle="modal" data-target="#modal3"
                                            class="btn btn-white-fill">Ikut Event</a>';
                                 } else {
                                     $evt_id = $events['evt_id'];
-                                    echo '<a href="#" data-toggle="modal" data-target="#modal1"
+                                    echo '<a href="#" data-toggle="modal" data-target="#modal4"
                                            class="btn btn-white-fill">Daftar</a>';
                                 }
                                 ?>
@@ -202,7 +202,7 @@ $evt_id = 0;
                             <div class="box-second active text-center">
                                 <h4 class="white">DESKRIPSI</h4>
                                 <p class="white"><?php echo $events['evt_deskripsi']; ?></p>
-                                <a <?php echo 'href="events.php?id=' . $events['evt_id'] . '"'; ?>href="#"
+                                <a <?php echo 'href="eventdetails.php?id=' . $events['evt_id'] . '"'; ?>href="#"
                                    data-toggle="modal"
                                    class="btn btn-white-fill">Read more</a>
                             </div>
@@ -279,6 +279,7 @@ $evt_id = 0;
         </div>
     </div>
 </div>
+
 <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content modal-popup">
@@ -292,6 +293,22 @@ $evt_id = 0;
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-popup">
+            <a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
+            <h3 class="white">Register</h3>
+            <form action="" method="post" class="popup-form">
+                <input type="text" class="form-control form-white" name="inFullname" placeholder="Fullname">
+                <input type="email" class="form-control form-white" name="inEmail" placeholder="Email">
+                <input type="tel" min="10" max="13" class="form-control form-white" name="inPhonenum" placeholder="No. Handphone">
+                <button type="submit" class="btn btn-submit" name="btnJoinManual">Daftarkan Sekarang</button>
+            </form>
+        </div>
+    </div>
+</div>
+
 <footer>
     <div id="hhh" class="container">
         <div class="row">
@@ -410,7 +427,60 @@ if(isset($_POST['btnJoin'])){
         echo '<script>alert("Masukan jumlah")</script>';
         return;
     }
-    $initDb->pendaftaranEventAuto($sessionManager->get('current_user'), $evt_id, $jumlah);
+
+    if($initDb->pendaftaranEventAuto($sessionManager->get('current_user'), $evt_id, $jumlah)){
+        echo '<script>alert("Thank you")</script>';
+        return;
+    }
+
+    echo '<script>alert("Gagal mendaftarkan ke event")</script>';
+}
+
+
+if(isset($_POST['btnJoinManual'])){
+    if(!isset($_POST['inFullname'])){
+        echo '<script>alert("Nama harus diisi")</script>';
+        return;
+    }
+
+    if(!isset($_POST['inEmail'])){
+        echo '<script>alert("Email harus diisi")</script>';
+        return;
+    }
+
+    if(!isset($_POST['inPhonenum'])){
+        echo '<script>alert("No. Handphone harus diisi")</script>';
+        return;
+    }
+
+    if($initDb->pendaftaranEventManual($evt_id, $_POST['inFullname'], $_POST['inEmail'], $_POST['inPhonenum'])){
+        echo '<script>alert("Thank you")</script>';
+        return;
+    }
+    echo '<script>alert("Gagal mendaftarkan ke event")</script>';
+}
+
+if(isset($_POST['btnJoinManual'])){
+    if(!isset($_POST['inFullname'])){
+        echo '<script>alert("Nama harus diisi")</script>';
+        return;
+    }
+
+    if(!isset($_POST['inEmail'])){
+        echo '<script>alert("Email harus diisi")</script>';
+        return;
+    }
+
+    if(!isset($_POST['inPhonenum'])){
+        echo '<script>alert("No. Handphone harus diisi")</script>';
+        return;
+    }
+
+    if($initDb->pendaftaranEventManual($evt_id, $_POST['inFullname'], $_POST['inEmail'], $_POST['inPhonenum'])){
+        echo '<script>alert("Thank you")</script>';
+        return;
+    }
+    echo '<script>alert("Gagal mendaftarkan ke event")</script>';
 }
 ?>
 </html>

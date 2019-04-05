@@ -63,13 +63,22 @@ class model{
     }
 
     public function register($fullname, $email, $username, $password, $repassword, $role = 'User'){
-        $fullname   = mysqli_real_escape_string($this->connect, $email);
+        $fullname   = mysqli_real_escape_string($this->connect, $fullname);
         $email      = mysqli_real_escape_string($this->connect, $email);
         $username   = mysqli_real_escape_string($this->connect, $username);
         $password   = mysqli_real_escape_string($this->connect, $password);
         $repassword = mysqli_real_escape_string($this->connect, $repassword);
         $role       = mysqli_real_escape_string($this->connect, $role);
 
+        $check = $this->connect->prepare('SELECT * FROM tbl_user WHERE usr_username = ? OR usr_email = ?');
+        $check->bind_param('ss', $username, $email);
+        $check->execute();
+        $check->store_result();
+        if($check->num_rows != 0){
+            return array(
+                'message' => 'Username atau email sudah terdaftar'
+            );
+        }
         if($password !== $repassword){
             return array(
                 'message' => 'Password tidak sama'
@@ -159,6 +168,28 @@ class model{
         }
         return true;
     }
+    public function getEventDetail($evt_id){
+        $evt_id = mysqli_real_escape_string($this->connect, $evt_id);
+
+        $get = $this->connect->prepare('SELECT evt.evt_nama, evt.evt_deskripsi, evt.evt_tanggal, evt.evt_kuota, evt.evt_poster 
+                                        FROM tbl_event AS evt
+                                        WHERE evt_id = ?');
+        $get->bind_param('i', $evt_id);
+        $get->execute();
+        $get->store_result();
+        if($get->num_rows == 0){
+            return false;
+        }
+
+        $get->bind_result($evt_nama, $evt_deskripsi, $evt_tanggal, $evt_kuota, $evt_poster);
+        $data = array();
+        while($get->fetch()){
+            $data[] = ['evt_nama' => $evt_nama, 'evt_deskripsi' => $evt_deskripsi, 'evt_tanggal' => $evt_tanggal,
+                'evt_kuota' => $evt_kuota, 'evt_poster' => $evt_poster];
+        }
+
+        return array_slice($data, 0, 1);
+    }
 
     public function getEventWithLimit($limit = 3){
         $limit = mysqli_real_escape_string($this->connect, $limit);
@@ -229,7 +260,6 @@ class model{
             return false;
         }
 
-        $data = array();
         $get->bind_result($usr_id);
 
         $usr_id = mysqli_real_escape_string($this->connect, $usr_id);
@@ -246,14 +276,23 @@ class model{
         return true;
     }
 
-    public function pendaftaranEventManual($fullname, $email, $phonenum, $jumlah){
+    public function pendaftaranEventManual($evt_id, $fullname, $email, $phonenum){
+        $evt_id = mysqli_real_escape_string($this->connect, $evt_id);
         $fullname = mysqli_real_escape_string($this->connect, $fullname);
         $email = mysqli_real_escape_string($this->connect, $email);
         $phonenum = mysqli_real_escape_string($this->connect, $phonenum);
-        $jumlah = mysqli_real_escape_string($this->connect, $jumlah);
+
+        $check = $this->connect->prepare('SELECT * FROM tbl_eventpendfmanual WHERE epm_email = ? AND evt_id = ?');
+        $check->bind_param('si', $email, $evt_id);
+        $check->execute();
+        $check->store_result();
+
+        if($check->num_rows != 0){
+            return false;
+        }
 
         $daftar = $this->connect->prepare('INSERT INTO tbl_eventpendfmanual(evt_id, epm_nama, epm_email, epm_nohp) VALUES(?,?,?,?)');
-        $daftar->bind_param('issi', $fullname, $email, $phonenum, $jumlah);
+        $daftar->bind_param('issi', $evt_id, $fullname, $email, $phonenum);
         $daftar->execute();
         $daftar->store_result();
         if($daftar->affected_rows == 0){
