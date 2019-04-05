@@ -22,7 +22,7 @@ $evt_id = 0;
             <div class="header-text">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h3 class="light white">"Gambar Lab EAD"</h3>
+                        <img src="img/icon-ead.png"><br>
                         <h1 class="white typed">Event EAD Laboratory</h1>
                         <span class="typed-cursor">|</span>
                     </div>
@@ -31,6 +31,7 @@ $evt_id = 0;
         </div>
     </div>
 </header>
+
 <section id="pricing" class="section">
     <div class="container">
         <div class="row title text-left">

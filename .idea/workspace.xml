@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49f6c1f2-1229-4700-8911-8e5f0e5cacad" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/core/header.php" afterPath="$PROJECT_DIR$/application/core/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/css/cardio.css" afterPath="$PROJECT_DIR$/application/css/cardio.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/eventdetails.php" afterPath="$PROJECT_DIR$/application/eventdetails.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index.php" afterPath="$PROJECT_DIR$/application/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model.php" afterPath="$PROJECT_DIR$/model.php" />
     </list>
@@ -31,51 +29,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="model.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="model.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-42">
-              <caret line="79" column="14" lean-forward="false" selection-start-line="79" selection-start-column="14" selection-end-line="79" selection-end-column="14" />
+            <state relative-caret-position="378">
+              <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
               <folding>
-                <marker date="1554469067674" expanded="true" signature="1448:1522" ph="SELECT usr_u... tbl_user" />
-                <marker date="1554469067674" expanded="true" signature="2556:2618" ph="SELECT * FRO... tbl_user" />
-                <marker date="1554469067674" expanded="true" signature="3127:3228" ph="INSERT INTO tbl_user... " />
-                <marker date="1554469067674" expanded="true" signature="3998:4045" ph="INSERT INTO tbl_newsletter... " />
-                <marker date="1554469067674" expanded="true" signature="4677:4699" ph="INSERT INTO tbl_event... " />
-                <marker date="1554469067674" expanded="true" signature="4677:4748" ph="INSERT INTO tbl_event... " />
-                <marker date="1554469067674" expanded="true" signature="4677:4764" ph="INSERT INTO tbl_event... " />
-                <marker date="1554469067674" expanded="true" signature="5153:5191" ph="DELETE FROM " />
-                <marker date="1554469067674" expanded="true" signature="5940:6042" ph="UPDATE tbl_e... " />
-                <marker date="1554469067674" expanded="true" signature="6467:6673" ph="SELECT evt.e... tbl_event" />
-                <marker date="1554469067674" expanded="true" signature="7396:7403" ph="SELECT evt.e... tbl_event" />
-                <marker date="1554469067674" expanded="true" signature="7396:7928" ph="SELECT evt.e... tbl_event" />
-                <marker date="1554469067674" expanded="true" signature="7396:8303" ph="SELECT evt_i... tbl_event" />
-                <marker date="1554469067674" expanded="true" signature="9440:9495" ph="SELECT hst_n... tbl_host" />
-                <marker date="1554469067674" expanded="true" signature="10146:10196" ph="SELECT usr_i... tbl_user" />
-                <marker date="1554469067674" expanded="true" signature="10670:10738" ph="INSERT INTO tbl_eventpendf... " />
-                <marker date="1554469067674" expanded="true" signature="11387:11399" ph="SELECT * FRO... " />
-                <marker date="1554469067674" expanded="true" signature="11387:11456" ph="SELECT * FRO... tbl_eventpendfmanual" />
-                <marker date="1554469067674" expanded="true" signature="11686:11773" ph="INSERT INTO tbl_eventpendfmanual... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="eventdetails.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/eventdetails.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="160" column="0" lean-forward="true" selection-start-line="160" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#section#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#0;n#fieldset#0;n#div#0;n#section#1;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#td#0;n#tr#0;n#table#0;n#fieldset#0;n#div#0;n#section#1;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#td#0;n#tr#1;n#table#0;n#fieldset#0;n#div#0;n#section#1;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#td#0;n#tr#6;n#table#0;n#fieldset#0;n#div#0;n#section#1;n#html#0;n#!!top" expanded="true" />
-                <marker date="1554467426370" expanded="true" signature="2690:3061" ph="..." />
-                <marker date="1554467426370" expanded="true" signature="2855:3031" ph="..." />
-                <marker date="1554467426370" expanded="true" signature="3405:3483" ph="..." />
-                <marker date="1554467426370" expanded="true" signature="3615:3689" ph="..." />
+                <marker date="1554478013211" expanded="true" signature="1448:1522" ph="SELECT usr_u... tbl_user" />
+                <marker date="1554478013211" expanded="true" signature="2556:2618" ph="SELECT * FRO... tbl_user" />
+                <marker date="1554478013211" expanded="true" signature="3127:3228" ph="INSERT INTO tbl_user... " />
+                <marker date="1554478013211" expanded="true" signature="3998:4045" ph="INSERT INTO tbl_newsletter... " />
+                <marker date="1554478013211" expanded="true" signature="4856:4878" ph="INSERT INTO tbl_event... " />
+                <marker date="1554478013211" expanded="true" signature="4856:4993" ph="INSERT INTO tbl_event... " />
+                <marker date="1554478013211" expanded="true" signature="4856:5033" ph="INSERT INTO tbl_event... " />
+                <marker date="1554478013211" expanded="true" signature="5324:5380" ph="INSERT INTO tbl_eventcatrel... " />
+                <marker date="1554478013211" expanded="true" signature="5753:5791" ph="DELETE FROM " />
+                <marker date="1554478013211" expanded="true" signature="6540:6642" ph="UPDATE tbl_e... " />
+                <marker date="1554478013211" expanded="true" signature="7068:7274" ph="SELECT evt.e... tbl_event" />
+                <marker date="1554478013211" expanded="true" signature="7997:8004" ph="SELECT evt.e... tbl_event" />
+                <marker date="1554478013211" expanded="true" signature="7997:8529" ph="SELECT evt.e... tbl_event" />
+                <marker date="1554478013211" expanded="true" signature="7997:8904" ph="SELECT evt_i... tbl_event" />
+                <marker date="1554478013211" expanded="true" signature="10041:10096" ph="SELECT hst_n... tbl_host" />
+                <marker date="1554478013211" expanded="true" signature="10747:10797" ph="SELECT usr_i... tbl_user" />
+                <marker date="1554478013211" expanded="true" signature="11271:11339" ph="INSERT INTO tbl_eventpendf... " />
+                <marker date="1554478013211" expanded="true" signature="11988:12000" ph="SELECT * FRO... " />
+                <marker date="1554478013211" expanded="true" signature="11988:12057" ph="SELECT * FRO... tbl_eventpendfmanual" />
+                <marker date="1554478013211" expanded="true" signature="12287:12374" ph="INSERT INTO tbl_eventpendfmanual... " />
               </folding>
             </state>
           </provider>
@@ -84,16 +63,79 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="386" column="26" lean-forward="true" selection-start-line="386" selection-start-column="26" selection-end-line="386" selection-end-column="26" />
+            <state relative-caret-position="599">
+              <caret line="482" column="5" lean-forward="true" selection-start-line="482" selection-start-column="5" selection-end-line="483" selection-end-column="65" />
               <folding>
-                <marker date="1554467405647" expanded="true" signature="2296:2380" ph="..." />
-                <marker date="1554467405647" expanded="true" signature="2585:2665" ph="..." />
-                <marker date="1554467405647" expanded="true" signature="5743:5827" ph="..." />
-                <marker date="1554467405647" expanded="true" signature="6032:6112" ph="..." />
-                <marker date="1554467405647" expanded="true" signature="9291:9375" ph="..." />
-                <marker date="1554467405647" expanded="true" signature="9580:9660" ph="..." />
+                <marker date="1554470872803" expanded="true" signature="2284:2368" ph="..." />
+                <marker date="1554470872803" expanded="true" signature="2573:2653" ph="..." />
+                <marker date="1554470872803" expanded="true" signature="5731:5815" ph="..." />
+                <marker date="1554470872803" expanded="true" signature="6020:6100" ph="..." />
+                <marker date="1554470872803" expanded="true" signature="9279:9363" ph="..." />
+                <marker date="1554470872803" expanded="true" signature="9568:9648" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add-event.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/add-event.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="12" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list-event.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/list-event.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-42">
+              <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/include/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/include/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="9" column="41" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+              <folding>
+                <marker date="1554478926080" expanded="true" signature="2277:2291" ph="..." />
+                <marker date="1554478926080" expanded="true" signature="2351:2370" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/include/sidebar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,67 +150,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cardio.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/css/cardio.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="555" column="27" lean-forward="true" selection-start-line="555" selection-start-column="27" selection-end-line="555" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="joinevent.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/joinevent.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/core/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="59" column="73" lean-forward="true" selection-start-line="59" selection-start-column="73" selection-end-line="59" selection-end-column="73" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="2" />
               <folding>
                 <marker date="1554468744884" expanded="true" signature="3067:3306" ph="..." />
                 <marker date="1554468744884" expanded="true" signature="3067:3307" ph="..." />
                 <marker date="1554468744884" expanded="true" signature="3067:3512" ph="..." />
                 <marker date="1554468744884" expanded="true" signature="3613:4065" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logout.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/logout.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Session.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/vendor/rcastera/session/src/rcastera/Browser/Session/Session.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="33" column="21" lean-forward="false" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -196,6 +188,10 @@
       <find>form-control.form</find>
       <find>form-control</find>
       <find>date(</find>
+      <find>Gambar</find>
+      <find>img sr</find>
+      <find>data</find>
+      <find>Johnny</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -214,9 +210,16 @@
         <option value="$PROJECT_DIR$/application/joinevent.php" />
         <option value="$PROJECT_DIR$/application/css/cardio.css" />
         <option value="$PROJECT_DIR$/application/eventdetails.php" />
-        <option value="$PROJECT_DIR$/application/index.php" />
         <option value="$PROJECT_DIR$/application/core/header.php" />
+        <option value="$PROJECT_DIR$/../ltecrud/config/main.php" />
+        <option value="$PROJECT_DIR$/application/index.php" />
+        <option value="$PROJECT_DIR$/admin/include/footer.php" />
+        <option value="$PROJECT_DIR$/admin/add-event.php" />
+        <option value="$PROJECT_DIR$/admin/include/sidebar.php" />
+        <option value="$PROJECT_DIR$/admin/list-event.php" />
         <option value="$PROJECT_DIR$/model.php" />
+        <option value="$PROJECT_DIR$/admin/include/header.php" />
+        <option value="$PROJECT_DIR$/admin/index.php" />
       </list>
     </option>
   </component>
@@ -262,6 +265,17 @@
             <path>
               <item name="EventManagementEAD" type="b2602c69:ProjectViewProjectNode" />
               <item name="EventManagementEAD" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="EventManagementEAD" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EventManagementEAD" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="include" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="EventManagementEAD" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EventManagementEAD" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -280,8 +294,13 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="liveEdit" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../beevention-front-end" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ltecrud" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\EventManagementEAD\admin" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -313,12 +332,12 @@
       <workItem from="1554189891757" duration="11536000" />
       <workItem from="1554274118874" duration="21222000" />
       <workItem from="1554361869488" duration="14354000" />
-      <workItem from="1554452258234" duration="14264000" />
+      <workItem from="1554452258234" duration="21084000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64527000" />
+    <option name="totallyTimeSpent" value="71347000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -380,25 +399,26 @@
         <state relative-caret-position="4158">
           <caret line="198" column="37" lean-forward="false" selection-start-line="198" selection-start-column="37" selection-end-line="198" selection-end-column="37" />
           <folding>
-            <marker date="1554469067674" expanded="true" signature="1448:1522" ph="SELECT usr_u... tbl_user" />
-            <marker date="1554469067674" expanded="true" signature="2556:2618" ph="SELECT * FRO... tbl_user" />
-            <marker date="1554469067674" expanded="true" signature="3127:3228" ph="INSERT INTO tbl_user... " />
-            <marker date="1554469067674" expanded="true" signature="3998:4045" ph="INSERT INTO tbl_newsletter... " />
-            <marker date="1554469067674" expanded="true" signature="4677:4699" ph="INSERT INTO tbl_event... " />
-            <marker date="1554469067674" expanded="true" signature="4677:4748" ph="INSERT INTO tbl_event... " />
-            <marker date="1554469067674" expanded="true" signature="4677:4764" ph="INSERT INTO tbl_event... " />
-            <marker date="1554469067674" expanded="true" signature="5153:5191" ph="DELETE FROM " />
-            <marker date="1554469067674" expanded="true" signature="5940:6042" ph="UPDATE tbl_e... " />
-            <marker date="1554469067674" expanded="true" signature="6467:6673" ph="SELECT evt.e... tbl_event" />
-            <marker date="1554469067674" expanded="true" signature="7396:7403" ph="SELECT evt.e... tbl_event" />
-            <marker date="1554469067674" expanded="true" signature="7396:7928" ph="SELECT evt.e... tbl_event" />
-            <marker date="1554469067674" expanded="true" signature="7396:8303" ph="SELECT evt_i... tbl_event" />
-            <marker date="1554469067674" expanded="true" signature="9440:9495" ph="SELECT hst_n... tbl_host" />
-            <marker date="1554469067674" expanded="true" signature="10146:10196" ph="SELECT usr_i... tbl_user" />
-            <marker date="1554469067674" expanded="true" signature="10670:10738" ph="INSERT INTO tbl_eventpendf... " />
-            <marker date="1554469067674" expanded="true" signature="11387:11399" ph="SELECT * FRO... " />
-            <marker date="1554469067674" expanded="true" signature="11387:11456" ph="SELECT * FRO... tbl_eventpendfmanual" />
-            <marker date="1554469067674" expanded="true" signature="11686:11773" ph="INSERT INTO tbl_eventpendfmanual... " />
+            <marker date="1554478013211" expanded="true" signature="1448:1522" ph="SELECT usr_u... tbl_user" />
+            <marker date="1554478013211" expanded="true" signature="2556:2618" ph="SELECT * FRO... tbl_user" />
+            <marker date="1554478013211" expanded="true" signature="3127:3228" ph="INSERT INTO tbl_user... " />
+            <marker date="1554478013211" expanded="true" signature="3998:4045" ph="INSERT INTO tbl_newsletter... " />
+            <marker date="1554478013211" expanded="true" signature="4856:4878" ph="INSERT INTO tbl_event... " />
+            <marker date="1554478013211" expanded="true" signature="4856:4993" ph="INSERT INTO tbl_event... " />
+            <marker date="1554478013211" expanded="true" signature="4856:5033" ph="INSERT INTO tbl_event... " />
+            <marker date="1554478013211" expanded="true" signature="5324:5380" ph="INSERT INTO tbl_eventcatrel... " />
+            <marker date="1554478013211" expanded="true" signature="5753:5791" ph="DELETE FROM " />
+            <marker date="1554478013211" expanded="true" signature="6540:6642" ph="UPDATE tbl_e... " />
+            <marker date="1554478013211" expanded="true" signature="7068:7274" ph="SELECT evt.e... tbl_event" />
+            <marker date="1554478013211" expanded="true" signature="7997:8004" ph="SELECT evt.e... tbl_event" />
+            <marker date="1554478013211" expanded="true" signature="7997:8529" ph="SELECT evt.e... tbl_event" />
+            <marker date="1554478013211" expanded="true" signature="7997:8904" ph="SELECT evt_i... tbl_event" />
+            <marker date="1554478013211" expanded="true" signature="10041:10096" ph="SELECT hst_n... tbl_host" />
+            <marker date="1554478013211" expanded="true" signature="10747:10797" ph="SELECT usr_i... tbl_user" />
+            <marker date="1554478013211" expanded="true" signature="11271:11339" ph="INSERT INTO tbl_eventpendf... " />
+            <marker date="1554478013211" expanded="true" signature="11988:12000" ph="SELECT * FRO... " />
+            <marker date="1554478013211" expanded="true" signature="11988:12057" ph="SELECT * FRO... tbl_eventpendfmanual" />
+            <marker date="1554478013211" expanded="true" signature="12287:12374" ph="INSERT INTO tbl_eventpendfmanual... " />
           </folding>
         </state>
       </provider>
@@ -408,12 +428,12 @@
         <state relative-caret-position="5502">
           <caret line="262" column="96" lean-forward="false" selection-start-line="262" selection-start-column="96" selection-end-line="262" selection-end-column="96" />
           <folding>
-            <marker date="1554467405647" expanded="true" signature="2296:2380" ph="..." />
-            <marker date="1554467405647" expanded="true" signature="2585:2665" ph="..." />
-            <marker date="1554467405647" expanded="true" signature="5743:5827" ph="..." />
-            <marker date="1554467405647" expanded="true" signature="6032:6112" ph="..." />
-            <marker date="1554467405647" expanded="true" signature="9291:9375" ph="..." />
-            <marker date="1554467405647" expanded="true" signature="9580:9660" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="2284:2368" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="2573:2653" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="5731:5815" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="6020:6100" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="9279:9363" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="9568:9648" ph="..." />
           </folding>
         </state>
       </provider>
@@ -476,25 +496,26 @@
         <state relative-caret-position="3717">
           <caret line="177" column="73" lean-forward="false" selection-start-line="177" selection-start-column="73" selection-end-line="177" selection-end-column="73" />
           <folding>
-            <marker date="1554469067674" expanded="true" signature="1448:1522" ph="SELECT usr_u... tbl_user" />
-            <marker date="1554469067674" expanded="true" signature="2556:2618" ph="SELECT * FRO... tbl_user" />
-            <marker date="1554469067674" expanded="true" signature="3127:3228" ph="INSERT INTO tbl_user... " />
-            <marker date="1554469067674" expanded="true" signature="3998:4045" ph="INSERT INTO tbl_newsletter... " />
-            <marker date="1554469067674" expanded="true" signature="4677:4699" ph="INSERT INTO tbl_event... " />
-            <marker date="1554469067674" expanded="true" signature="4677:4748" ph="INSERT INTO tbl_event... " />
-            <marker date="1554469067674" expanded="true" signature="4677:4764" ph="INSERT INTO tbl_event... " />
-            <marker date="1554469067674" expanded="true" signature="5153:5191" ph="DELETE FROM " />
-            <marker date="1554469067674" expanded="true" signature="5940:6042" ph="UPDATE tbl_e... " />
-            <marker date="1554469067674" expanded="true" signature="6467:6673" ph="SELECT evt.e... tbl_event" />
-            <marker date="1554469067674" expanded="true" signature="7396:7403" ph="SELECT evt.e... tbl_event" />
-            <marker date="1554469067674" expanded="true" signature="7396:7928" ph="SELECT evt.e... tbl_event" />
-            <marker date="1554469067674" expanded="true" signature="7396:8303" ph="SELECT evt_i... tbl_event" />
-            <marker date="1554469067674" expanded="true" signature="9440:9495" ph="SELECT hst_n... tbl_host" />
-            <marker date="1554469067674" expanded="true" signature="10146:10196" ph="SELECT usr_i... tbl_user" />
-            <marker date="1554469067674" expanded="true" signature="10670:10738" ph="INSERT INTO tbl_eventpendf... " />
-            <marker date="1554469067674" expanded="true" signature="11387:11399" ph="SELECT * FRO... " />
-            <marker date="1554469067674" expanded="true" signature="11387:11456" ph="SELECT * FRO... tbl_eventpendfmanual" />
-            <marker date="1554469067674" expanded="true" signature="11686:11773" ph="INSERT INTO tbl_eventpendfmanual... " />
+            <marker date="1554478013211" expanded="true" signature="1448:1522" ph="SELECT usr_u... tbl_user" />
+            <marker date="1554478013211" expanded="true" signature="2556:2618" ph="SELECT * FRO... tbl_user" />
+            <marker date="1554478013211" expanded="true" signature="3127:3228" ph="INSERT INTO tbl_user... " />
+            <marker date="1554478013211" expanded="true" signature="3998:4045" ph="INSERT INTO tbl_newsletter... " />
+            <marker date="1554478013211" expanded="true" signature="4856:4878" ph="INSERT INTO tbl_event... " />
+            <marker date="1554478013211" expanded="true" signature="4856:4993" ph="INSERT INTO tbl_event... " />
+            <marker date="1554478013211" expanded="true" signature="4856:5033" ph="INSERT INTO tbl_event... " />
+            <marker date="1554478013211" expanded="true" signature="5324:5380" ph="INSERT INTO tbl_eventcatrel... " />
+            <marker date="1554478013211" expanded="true" signature="5753:5791" ph="DELETE FROM " />
+            <marker date="1554478013211" expanded="true" signature="6540:6642" ph="UPDATE tbl_e... " />
+            <marker date="1554478013211" expanded="true" signature="7068:7274" ph="SELECT evt.e... tbl_event" />
+            <marker date="1554478013211" expanded="true" signature="7997:8004" ph="SELECT evt.e... tbl_event" />
+            <marker date="1554478013211" expanded="true" signature="7997:8529" ph="SELECT evt.e... tbl_event" />
+            <marker date="1554478013211" expanded="true" signature="7997:8904" ph="SELECT evt_i... tbl_event" />
+            <marker date="1554478013211" expanded="true" signature="10041:10096" ph="SELECT hst_n... tbl_host" />
+            <marker date="1554478013211" expanded="true" signature="10747:10797" ph="SELECT usr_i... tbl_user" />
+            <marker date="1554478013211" expanded="true" signature="11271:11339" ph="INSERT INTO tbl_eventpendf... " />
+            <marker date="1554478013211" expanded="true" signature="11988:12000" ph="SELECT * FRO... " />
+            <marker date="1554478013211" expanded="true" signature="11988:12057" ph="SELECT * FRO... tbl_eventpendfmanual" />
+            <marker date="1554478013211" expanded="true" signature="12287:12374" ph="INSERT INTO tbl_eventpendfmanual... " />
           </folding>
         </state>
       </provider>
@@ -504,12 +525,12 @@
         <state relative-caret-position="63">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <marker date="1554467405647" expanded="true" signature="2296:2380" ph="..." />
-            <marker date="1554467405647" expanded="true" signature="2585:2665" ph="..." />
-            <marker date="1554467405647" expanded="true" signature="5743:5827" ph="..." />
-            <marker date="1554467405647" expanded="true" signature="6032:6112" ph="..." />
-            <marker date="1554467405647" expanded="true" signature="9291:9375" ph="..." />
-            <marker date="1554467405647" expanded="true" signature="9580:9660" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="2284:2368" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="2573:2653" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="5731:5815" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="6020:6100" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="9279:9363" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="9568:9648" ph="..." />
           </folding>
         </state>
       </provider>
@@ -564,25 +585,26 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1554469067674" expanded="true" signature="1448:1522" ph="SELECT usr_u... tbl_user" />
-            <marker date="1554469067674" expanded="true" signature="2556:2618" ph="SELECT * FRO... tbl_user" />
-            <marker date="1554469067674" expanded="true" signature="3127:3228" ph="INSERT INTO tbl_user... " />
-            <marker date="1554469067674" expanded="true" signature="3998:4045" ph="INSERT INTO tbl_newsletter... " />
-            <marker date="1554469067674" expanded="true" signature="4677:4699" ph="INSERT INTO tbl_event... " />
-            <marker date="1554469067674" expanded="true" signature="4677:4748" ph="INSERT INTO tbl_event... " />
-            <marker date="1554469067674" expanded="true" signature="4677:4764" ph="INSERT INTO tbl_event... " />
-            <marker date="1554469067674" expanded="true" signature="5153:5191" ph="DELETE FROM " />
-            <marker date="1554469067674" expanded="true" signature="5940:6042" ph="UPDATE tbl_e... " />
-            <marker date="1554469067674" expanded="true" signature="6467:6673" ph="SELECT evt.e... tbl_event" />
-            <marker date="1554469067674" expanded="true" signature="7396:7403" ph="SELECT evt.e... tbl_event" />
-            <marker date="1554469067674" expanded="true" signature="7396:7928" ph="SELECT evt.e... tbl_event" />
-            <marker date="1554469067674" expanded="true" signature="7396:8303" ph="SELECT evt_i... tbl_event" />
-            <marker date="1554469067674" expanded="true" signature="9440:9495" ph="SELECT hst_n... tbl_host" />
-            <marker date="1554469067674" expanded="true" signature="10146:10196" ph="SELECT usr_i... tbl_user" />
-            <marker date="1554469067674" expanded="true" signature="10670:10738" ph="INSERT INTO tbl_eventpendf... " />
-            <marker date="1554469067674" expanded="true" signature="11387:11399" ph="SELECT * FRO... " />
-            <marker date="1554469067674" expanded="true" signature="11387:11456" ph="SELECT * FRO... tbl_eventpendfmanual" />
-            <marker date="1554469067674" expanded="true" signature="11686:11773" ph="INSERT INTO tbl_eventpendfmanual... " />
+            <marker date="1554478013211" expanded="true" signature="1448:1522" ph="SELECT usr_u... tbl_user" />
+            <marker date="1554478013211" expanded="true" signature="2556:2618" ph="SELECT * FRO... tbl_user" />
+            <marker date="1554478013211" expanded="true" signature="3127:3228" ph="INSERT INTO tbl_user... " />
+            <marker date="1554478013211" expanded="true" signature="3998:4045" ph="INSERT INTO tbl_newsletter... " />
+            <marker date="1554478013211" expanded="true" signature="4856:4878" ph="INSERT INTO tbl_event... " />
+            <marker date="1554478013211" expanded="true" signature="4856:4993" ph="INSERT INTO tbl_event... " />
+            <marker date="1554478013211" expanded="true" signature="4856:5033" ph="INSERT INTO tbl_event... " />
+            <marker date="1554478013211" expanded="true" signature="5324:5380" ph="INSERT INTO tbl_eventcatrel... " />
+            <marker date="1554478013211" expanded="true" signature="5753:5791" ph="DELETE FROM " />
+            <marker date="1554478013211" expanded="true" signature="6540:6642" ph="UPDATE tbl_e... " />
+            <marker date="1554478013211" expanded="true" signature="7068:7274" ph="SELECT evt.e... tbl_event" />
+            <marker date="1554478013211" expanded="true" signature="7997:8004" ph="SELECT evt.e... tbl_event" />
+            <marker date="1554478013211" expanded="true" signature="7997:8529" ph="SELECT evt.e... tbl_event" />
+            <marker date="1554478013211" expanded="true" signature="7997:8904" ph="SELECT evt_i... tbl_event" />
+            <marker date="1554478013211" expanded="true" signature="10041:10096" ph="SELECT hst_n... tbl_host" />
+            <marker date="1554478013211" expanded="true" signature="10747:10797" ph="SELECT usr_i... tbl_user" />
+            <marker date="1554478013211" expanded="true" signature="11271:11339" ph="INSERT INTO tbl_eventpendf... " />
+            <marker date="1554478013211" expanded="true" signature="11988:12000" ph="SELECT * FRO... " />
+            <marker date="1554478013211" expanded="true" signature="11988:12057" ph="SELECT * FRO... tbl_eventpendfmanual" />
+            <marker date="1554478013211" expanded="true" signature="12287:12374" ph="INSERT INTO tbl_eventpendfmanual... " />
           </folding>
         </state>
       </provider>
@@ -592,12 +614,12 @@
         <state relative-caret-position="2226">
           <caret line="106" column="37" lean-forward="true" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="37" />
           <folding>
-            <marker date="1554467405647" expanded="true" signature="2296:2380" ph="..." />
-            <marker date="1554467405647" expanded="true" signature="2585:2665" ph="..." />
-            <marker date="1554467405647" expanded="true" signature="5743:5827" ph="..." />
-            <marker date="1554467405647" expanded="true" signature="6032:6112" ph="..." />
-            <marker date="1554467405647" expanded="true" signature="9291:9375" ph="..." />
-            <marker date="1554467405647" expanded="true" signature="9580:9660" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="2284:2368" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="2573:2653" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="5731:5815" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="6020:6100" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="9279:9363" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="9568:9648" ph="..." />
           </folding>
         </state>
       </provider>
@@ -636,25 +658,26 @@
         <state relative-caret-position="1869">
           <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
           <folding>
-            <marker date="1554469067674" expanded="true" signature="1448:1522" ph="SELECT usr_u... tbl_user" />
-            <marker date="1554469067674" expanded="true" signature="2556:2618" ph="SELECT * FRO... tbl_user" />
-            <marker date="1554469067674" expanded="true" signature="3127:3228" ph="INSERT INTO tbl_user... " />
-            <marker date="1554469067674" expanded="true" signature="3998:4045" ph="INSERT INTO tbl_newsletter... " />
-            <marker date="1554469067674" expanded="true" signature="4677:4699" ph="INSERT INTO tbl_event... " />
-            <marker date="1554469067674" expanded="true" signature="4677:4748" ph="INSERT INTO tbl_event... " />
-            <marker date="1554469067674" expanded="true" signature="4677:4764" ph="INSERT INTO tbl_event... " />
-            <marker date="1554469067674" expanded="true" signature="5153:5191" ph="DELETE FROM " />
-            <marker date="1554469067674" expanded="true" signature="5940:6042" ph="UPDATE tbl_e... " />
-            <marker date="1554469067674" expanded="true" signature="6467:6673" ph="SELECT evt.e... tbl_event" />
-            <marker date="1554469067674" expanded="true" signature="7396:7403" ph="SELECT evt.e... tbl_event" />
-            <marker date="1554469067674" expanded="true" signature="7396:7928" ph="SELECT evt.e... tbl_event" />
-            <marker date="1554469067674" expanded="true" signature="7396:8303" ph="SELECT evt_i... tbl_event" />
-            <marker date="1554469067674" expanded="true" signature="9440:9495" ph="SELECT hst_n... tbl_host" />
-            <marker date="1554469067674" expanded="true" signature="10146:10196" ph="SELECT usr_i... tbl_user" />
-            <marker date="1554469067674" expanded="true" signature="10670:10738" ph="INSERT INTO tbl_eventpendf... " />
-            <marker date="1554469067674" expanded="true" signature="11387:11399" ph="SELECT * FRO... " />
-            <marker date="1554469067674" expanded="true" signature="11387:11456" ph="SELECT * FRO... tbl_eventpendfmanual" />
-            <marker date="1554469067674" expanded="true" signature="11686:11773" ph="INSERT INTO tbl_eventpendfmanual... " />
+            <marker date="1554478013211" expanded="true" signature="1448:1522" ph="SELECT usr_u... tbl_user" />
+            <marker date="1554478013211" expanded="true" signature="2556:2618" ph="SELECT * FRO... tbl_user" />
+            <marker date="1554478013211" expanded="true" signature="3127:3228" ph="INSERT INTO tbl_user... " />
+            <marker date="1554478013211" expanded="true" signature="3998:4045" ph="INSERT INTO tbl_newsletter... " />
+            <marker date="1554478013211" expanded="true" signature="4856:4878" ph="INSERT INTO tbl_event... " />
+            <marker date="1554478013211" expanded="true" signature="4856:4993" ph="INSERT INTO tbl_event... " />
+            <marker date="1554478013211" expanded="true" signature="4856:5033" ph="INSERT INTO tbl_event... " />
+            <marker date="1554478013211" expanded="true" signature="5324:5380" ph="INSERT INTO tbl_eventcatrel... " />
+            <marker date="1554478013211" expanded="true" signature="5753:5791" ph="DELETE FROM " />
+            <marker date="1554478013211" expanded="true" signature="6540:6642" ph="UPDATE tbl_e... " />
+            <marker date="1554478013211" expanded="true" signature="7068:7274" ph="SELECT evt.e... tbl_event" />
+            <marker date="1554478013211" expanded="true" signature="7997:8004" ph="SELECT evt.e... tbl_event" />
+            <marker date="1554478013211" expanded="true" signature="7997:8529" ph="SELECT evt.e... tbl_event" />
+            <marker date="1554478013211" expanded="true" signature="7997:8904" ph="SELECT evt_i... tbl_event" />
+            <marker date="1554478013211" expanded="true" signature="10041:10096" ph="SELECT hst_n... tbl_host" />
+            <marker date="1554478013211" expanded="true" signature="10747:10797" ph="SELECT usr_i... tbl_user" />
+            <marker date="1554478013211" expanded="true" signature="11271:11339" ph="INSERT INTO tbl_eventpendf... " />
+            <marker date="1554478013211" expanded="true" signature="11988:12000" ph="SELECT * FRO... " />
+            <marker date="1554478013211" expanded="true" signature="11988:12057" ph="SELECT * FRO... tbl_eventpendfmanual" />
+            <marker date="1554478013211" expanded="true" signature="12287:12374" ph="INSERT INTO tbl_eventpendfmanual... " />
           </folding>
         </state>
       </provider>
@@ -664,12 +687,12 @@
         <state relative-caret-position="462">
           <caret line="22" column="50" lean-forward="false" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
           <folding>
-            <marker date="1554467405647" expanded="true" signature="2296:2380" ph="..." />
-            <marker date="1554467405647" expanded="true" signature="2585:2665" ph="..." />
-            <marker date="1554467405647" expanded="true" signature="5743:5827" ph="..." />
-            <marker date="1554467405647" expanded="true" signature="6032:6112" ph="..." />
-            <marker date="1554467405647" expanded="true" signature="9291:9375" ph="..." />
-            <marker date="1554467405647" expanded="true" signature="9580:9660" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="2284:2368" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="2573:2653" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="5731:5815" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="6020:6100" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="9279:9363" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="9568:9648" ph="..." />
           </folding>
         </state>
       </provider>
@@ -679,25 +702,26 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1554469067674" expanded="true" signature="1448:1522" ph="SELECT usr_u... tbl_user" />
-            <marker date="1554469067674" expanded="true" signature="2556:2618" ph="SELECT * FRO... tbl_user" />
-            <marker date="1554469067674" expanded="true" signature="3127:3228" ph="INSERT INTO tbl_user... " />
-            <marker date="1554469067674" expanded="true" signature="3998:4045" ph="INSERT INTO tbl_newsletter... " />
-            <marker date="1554469067674" expanded="true" signature="4677:4699" ph="INSERT INTO tbl_event... " />
-            <marker date="1554469067674" expanded="true" signature="4677:4748" ph="INSERT INTO tbl_event... " />
-            <marker date="1554469067674" expanded="true" signature="4677:4764" ph="INSERT INTO tbl_event... " />
-            <marker date="1554469067674" expanded="true" signature="5153:5191" ph="DELETE FROM " />
-            <marker date="1554469067674" expanded="true" signature="5940:6042" ph="UPDATE tbl_e... " />
-            <marker date="1554469067674" expanded="true" signature="6467:6673" ph="SELECT evt.e... tbl_event" />
-            <marker date="1554469067674" expanded="true" signature="7396:7403" ph="SELECT evt.e... tbl_event" />
-            <marker date="1554469067674" expanded="true" signature="7396:7928" ph="SELECT evt.e... tbl_event" />
-            <marker date="1554469067674" expanded="true" signature="7396:8303" ph="SELECT evt_i... tbl_event" />
-            <marker date="1554469067674" expanded="true" signature="9440:9495" ph="SELECT hst_n... tbl_host" />
-            <marker date="1554469067674" expanded="true" signature="10146:10196" ph="SELECT usr_i... tbl_user" />
-            <marker date="1554469067674" expanded="true" signature="10670:10738" ph="INSERT INTO tbl_eventpendf... " />
-            <marker date="1554469067674" expanded="true" signature="11387:11399" ph="SELECT * FRO... " />
-            <marker date="1554469067674" expanded="true" signature="11387:11456" ph="SELECT * FRO... tbl_eventpendfmanual" />
-            <marker date="1554469067674" expanded="true" signature="11686:11773" ph="INSERT INTO tbl_eventpendfmanual... " />
+            <marker date="1554478013211" expanded="true" signature="1448:1522" ph="SELECT usr_u... tbl_user" />
+            <marker date="1554478013211" expanded="true" signature="2556:2618" ph="SELECT * FRO... tbl_user" />
+            <marker date="1554478013211" expanded="true" signature="3127:3228" ph="INSERT INTO tbl_user... " />
+            <marker date="1554478013211" expanded="true" signature="3998:4045" ph="INSERT INTO tbl_newsletter... " />
+            <marker date="1554478013211" expanded="true" signature="4856:4878" ph="INSERT INTO tbl_event... " />
+            <marker date="1554478013211" expanded="true" signature="4856:4993" ph="INSERT INTO tbl_event... " />
+            <marker date="1554478013211" expanded="true" signature="4856:5033" ph="INSERT INTO tbl_event... " />
+            <marker date="1554478013211" expanded="true" signature="5324:5380" ph="INSERT INTO tbl_eventcatrel... " />
+            <marker date="1554478013211" expanded="true" signature="5753:5791" ph="DELETE FROM " />
+            <marker date="1554478013211" expanded="true" signature="6540:6642" ph="UPDATE tbl_e... " />
+            <marker date="1554478013211" expanded="true" signature="7068:7274" ph="SELECT evt.e... tbl_event" />
+            <marker date="1554478013211" expanded="true" signature="7997:8004" ph="SELECT evt.e... tbl_event" />
+            <marker date="1554478013211" expanded="true" signature="7997:8529" ph="SELECT evt.e... tbl_event" />
+            <marker date="1554478013211" expanded="true" signature="7997:8904" ph="SELECT evt_i... tbl_event" />
+            <marker date="1554478013211" expanded="true" signature="10041:10096" ph="SELECT hst_n... tbl_host" />
+            <marker date="1554478013211" expanded="true" signature="10747:10797" ph="SELECT usr_i... tbl_user" />
+            <marker date="1554478013211" expanded="true" signature="11271:11339" ph="INSERT INTO tbl_eventpendf... " />
+            <marker date="1554478013211" expanded="true" signature="11988:12000" ph="SELECT * FRO... " />
+            <marker date="1554478013211" expanded="true" signature="11988:12057" ph="SELECT * FRO... tbl_eventpendfmanual" />
+            <marker date="1554478013211" expanded="true" signature="12287:12374" ph="INSERT INTO tbl_eventpendfmanual... " />
           </folding>
         </state>
       </provider>
@@ -797,51 +821,15 @@
     <entry file="file://$PROJECT_DIR$/application/css/cardio.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
-          <caret line="555" column="27" lean-forward="true" selection-start-line="555" selection-start-column="27" selection-end-line="555" selection-end-column="27" />
+          <caret line="555" column="27" lean-forward="false" selection-start-line="555" selection-start-column="27" selection-end-line="555" selection-end-column="27" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/event.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/core/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="59" column="73" lean-forward="true" selection-start-line="59" selection-start-column="73" selection-end-line="59" selection-end-column="73" />
-          <folding>
-            <marker date="1554468744884" expanded="true" signature="3067:3306" ph="..." />
-            <marker date="1554468744884" expanded="true" signature="3067:3307" ph="..." />
-            <marker date="1554468744884" expanded="true" signature="3067:3512" ph="..." />
-            <marker date="1554468744884" expanded="true" signature="3613:4065" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="386" column="26" lean-forward="true" selection-start-line="386" selection-start-column="26" selection-end-line="386" selection-end-column="26" />
-          <folding>
-            <marker date="1554467405647" expanded="true" signature="2296:2380" ph="..." />
-            <marker date="1554467405647" expanded="true" signature="2585:2665" ph="..." />
-            <marker date="1554467405647" expanded="true" signature="5743:5827" ph="..." />
-            <marker date="1554467405647" expanded="true" signature="6032:6112" ph="..." />
-            <marker date="1554467405647" expanded="true" signature="9291:9375" ph="..." />
-            <marker date="1554467405647" expanded="true" signature="9580:9660" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/eventdetails.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="160" column="0" lean-forward="true" selection-start-line="160" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
+          <caret line="160" column="0" lean-forward="false" selection-start-line="160" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#section#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#0;n#fieldset#0;n#div#0;n#section#1;n#html#0;n#!!top" expanded="true" />
@@ -856,30 +844,134 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model.php">
+    <entry file="file://$PROJECT_DIR$/../ltecrud/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/include/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/include/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/core/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="2" />
+          <folding>
+            <marker date="1554468744884" expanded="true" signature="3067:3306" ph="..." />
+            <marker date="1554468744884" expanded="true" signature="3067:3307" ph="..." />
+            <marker date="1554468744884" expanded="true" signature="3067:3512" ph="..." />
+            <marker date="1554468744884" expanded="true" signature="3613:4065" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="482" column="5" lean-forward="true" selection-start-line="482" selection-start-column="5" selection-end-line="483" selection-end-column="65" />
+          <folding>
+            <marker date="1554470872803" expanded="true" signature="2284:2368" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="2573:2653" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="5731:5815" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="6020:6100" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="9279:9363" ph="..." />
+            <marker date="1554470872803" expanded="true" signature="9568:9648" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/include/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/list-event.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-42">
-          <caret line="79" column="14" lean-forward="false" selection-start-line="79" selection-start-column="14" selection-end-line="79" selection-end-column="14" />
+          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
           <folding>
-            <marker date="1554469067674" expanded="true" signature="1448:1522" ph="SELECT usr_u... tbl_user" />
-            <marker date="1554469067674" expanded="true" signature="2556:2618" ph="SELECT * FRO... tbl_user" />
-            <marker date="1554469067674" expanded="true" signature="3127:3228" ph="INSERT INTO tbl_user... " />
-            <marker date="1554469067674" expanded="true" signature="3998:4045" ph="INSERT INTO tbl_newsletter... " />
-            <marker date="1554469067674" expanded="true" signature="4677:4699" ph="INSERT INTO tbl_event... " />
-            <marker date="1554469067674" expanded="true" signature="4677:4748" ph="INSERT INTO tbl_event... " />
-            <marker date="1554469067674" expanded="true" signature="4677:4764" ph="INSERT INTO tbl_event... " />
-            <marker date="1554469067674" expanded="true" signature="5153:5191" ph="DELETE FROM " />
-            <marker date="1554469067674" expanded="true" signature="5940:6042" ph="UPDATE tbl_e... " />
-            <marker date="1554469067674" expanded="true" signature="6467:6673" ph="SELECT evt.e... tbl_event" />
-            <marker date="1554469067674" expanded="true" signature="7396:7403" ph="SELECT evt.e... tbl_event" />
-            <marker date="1554469067674" expanded="true" signature="7396:7928" ph="SELECT evt.e... tbl_event" />
-            <marker date="1554469067674" expanded="true" signature="7396:8303" ph="SELECT evt_i... tbl_event" />
-            <marker date="1554469067674" expanded="true" signature="9440:9495" ph="SELECT hst_n... tbl_host" />
-            <marker date="1554469067674" expanded="true" signature="10146:10196" ph="SELECT usr_i... tbl_user" />
-            <marker date="1554469067674" expanded="true" signature="10670:10738" ph="INSERT INTO tbl_eventpendf... " />
-            <marker date="1554469067674" expanded="true" signature="11387:11399" ph="SELECT * FRO... " />
-            <marker date="1554469067674" expanded="true" signature="11387:11456" ph="SELECT * FRO... tbl_eventpendfmanual" />
-            <marker date="1554469067674" expanded="true" signature="11686:11773" ph="INSERT INTO tbl_eventpendfmanual... " />
+            <marker date="1554478013211" expanded="true" signature="1448:1522" ph="SELECT usr_u... tbl_user" />
+            <marker date="1554478013211" expanded="true" signature="2556:2618" ph="SELECT * FRO... tbl_user" />
+            <marker date="1554478013211" expanded="true" signature="3127:3228" ph="INSERT INTO tbl_user... " />
+            <marker date="1554478013211" expanded="true" signature="3998:4045" ph="INSERT INTO tbl_newsletter... " />
+            <marker date="1554478013211" expanded="true" signature="4856:4878" ph="INSERT INTO tbl_event... " />
+            <marker date="1554478013211" expanded="true" signature="4856:4993" ph="INSERT INTO tbl_event... " />
+            <marker date="1554478013211" expanded="true" signature="4856:5033" ph="INSERT INTO tbl_event... " />
+            <marker date="1554478013211" expanded="true" signature="5324:5380" ph="INSERT INTO tbl_eventcatrel... " />
+            <marker date="1554478013211" expanded="true" signature="5753:5791" ph="DELETE FROM " />
+            <marker date="1554478013211" expanded="true" signature="6540:6642" ph="UPDATE tbl_e... " />
+            <marker date="1554478013211" expanded="true" signature="7068:7274" ph="SELECT evt.e... tbl_event" />
+            <marker date="1554478013211" expanded="true" signature="7997:8004" ph="SELECT evt.e... tbl_event" />
+            <marker date="1554478013211" expanded="true" signature="7997:8529" ph="SELECT evt.e... tbl_event" />
+            <marker date="1554478013211" expanded="true" signature="7997:8904" ph="SELECT evt_i... tbl_event" />
+            <marker date="1554478013211" expanded="true" signature="10041:10096" ph="SELECT hst_n... tbl_host" />
+            <marker date="1554478013211" expanded="true" signature="10747:10797" ph="SELECT usr_i... tbl_user" />
+            <marker date="1554478013211" expanded="true" signature="11271:11339" ph="INSERT INTO tbl_eventpendf... " />
+            <marker date="1554478013211" expanded="true" signature="11988:12000" ph="SELECT * FRO... " />
+            <marker date="1554478013211" expanded="true" signature="11988:12057" ph="SELECT * FRO... tbl_eventpendfmanual" />
+            <marker date="1554478013211" expanded="true" signature="12287:12374" ph="INSERT INTO tbl_eventpendfmanual... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/add-event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="12" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/include/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" column="41" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+          <folding>
+            <marker date="1554478926080" expanded="true" signature="2277:2291" ph="..." />
+            <marker date="1554478926080" expanded="true" signature="2351:2370" ph="..." />
           </folding>
         </state>
       </provider>
