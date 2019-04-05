@@ -123,17 +123,30 @@ class model{
         return true;
     }
 
-    public function addEvent($nama, $deskripsi, $tanggal, $poster){
+    public function addEvent($nama, $deskripsi, $tanggal, $poster, $kuota, $evt_kategori){
         $nama      = mysqli_real_escape_string($this->connect, $nama);
         $deskripsi = mysqli_real_escape_string($this->connect, $deskripsi);
         $tanggal   = mysqli_real_escape_string($this->connect, $tanggal);
         $poster    = mysqli_real_escape_string($this->connect, $poster);
+        $kuota     = mysqli_real_escape_string($this->connect, $kuota);
+        $evt_kategori   = mysqli_real_escape_string($this->connect, $evt_kategori);
 
-        $add = $this->connect->prepare('INSERT INTO tbl_event(evt_nama, evt_deskripsi, evt_tanggal, evt_poster) VALUES(?,?,?,?)');
-        $add->bind_param('ssis', $nama, $deskripsi, $tanggal, $poster);
+        $add = $this->connect->prepare('INSERT INTO tbl_event(evt_nama, evt_deskripsi, evt_tanggal,
+                                      evt_poster, evt_kuota, evt_createdDate) VALUES(?,?,?,?,?,UNIX_TIMESTAMP(now()))');
+        $add->bind_param('ssisi', $nama, $deskripsi, $tanggal, $poster, $kuota);
         $add->execute();
         $add->store_result();
         if($add->affected_rows == 0){
+            return false;
+        }
+
+        $evt_id = $add->insert_id;
+
+        $cat = $this->connect->prepare('INSERT INTO tbl_eventcatrel(evt_id, evc_id) VALUES (?,?)');
+        $cat->bind_param('ii', $evt_id, $evt_kategori);
+        $cat->execute();
+        $cat->store_result();
+        if($cat->affected_rows == 0){
             return false;
         }
         return true;
@@ -168,6 +181,7 @@ class model{
         }
         return true;
     }
+
     public function getEventDetail($evt_id){
         $evt_id = mysqli_real_escape_string($this->connect, $evt_id);
 
