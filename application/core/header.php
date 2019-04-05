@@ -17,7 +17,7 @@
     <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="img/favicons/manifest.json">
-    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <link rel="shortcut icon" href="img/icon-ead.png">
     <meta name="msapplication-TileColor" content="#00a8ff">
     <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
@@ -51,7 +51,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="img/logo.png" data-active-url="img/logo-active.png" alt=""></a>
+            <a class="navbar-brand" href="#"><img src="img/icon-ead.png" data-active-url="img/icon-ead.png" alt=""></a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -69,7 +69,7 @@
                             <li><a href="#intro">Home</a></li>
                             <li><a href="#pricing">Event</a></li>
                             <li><a href="#yyy">About Us</a></li>
-                            <li><a href="#hhh" data-toggle="modal" data-target="#modal2">Sign Up</a></li>
+                            <li><a href="#hhh" data-toggle="modal" data-target="#modal2">Register</a></li>
                             <li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Sign In</a></li>
                         </ul>';
                 }

@@ -62,7 +62,8 @@ class model{
         return $loginDetail['log_detail'];
     }
 
-    public function register($email, $username, $password, $repassword, $role = 'User'){
+    public function register($fullname, $email, $username, $password, $repassword, $role = 'User'){
+        $fullname   = mysqli_real_escape_string($this->connect, $email);
         $email      = mysqli_real_escape_string($this->connect, $email);
         $username   = mysqli_real_escape_string($this->connect, $username);
         $password   = mysqli_real_escape_string($this->connect, $password);
@@ -77,8 +78,8 @@ class model{
 
         $password_hash = hash('sha256', $password);
 
-        $register = $this->connect->prepare('INSERT INTO tbl_user(usr_username, usr_role, usr_password, usr_email) VALUES(?,?,?,?)');
-        $register->bind_param('ssss', $username, $role, strtoupper($password_hash), $email);
+        $register = $this->connect->prepare('INSERT INTO tbl_user(usr_fullname, usr_username, usr_role, usr_password, usr_email) VALUES(?,?,?,?,?)');
+        $register->bind_param('sssss', $fullname, $username, $role, strtoupper($password_hash), $email);
         $register->execute();
         $register->store_result();
         if($register->affected_rows == 0){
@@ -159,7 +160,78 @@ class model{
         return true;
     }
 
-    public function pendaftaranEventAuto($usr_id, $evt_id, $epf_jumlah){
+    public function getEventWithLimit($limit = 3){
+        $limit = mysqli_real_escape_string($this->connect, $limit);
+
+        $get = $this->connect->prepare('SELECT evt.evt_id, evt.evt_nama, evt.evt_deskripsi, evt.evt_tanggal, evt.evt_kuota, evt.evt_poster, evt.evt_createdDate,
+                                        evt.evt_lokasi, evc.evc_name, usr.usr_nohp
+                                        FROM tbl_event as evt
+                                        JOIN tbl_eventcatrel as ecl
+                                        ON evt.evt_id = ecl.evt_id
+                                        JOIN tbl_eventcat as evc
+                                        ON ecl.evc_id = evc.evc_id
+                                        JOIN tbl_eventuser as evr
+                                        ON evt.evt_id = evr.evt_id
+                                        JOIN tbl_user as usr
+                                        ON evr.usr_id = usr.usr_id
+                                        ORDER BY evt_createdDate 
+                                        LIMIT ?');
+        $get->bind_param('i', $limit);
+        $get->execute();
+        $get->store_result();
+        if($get->num_rows == 0){
+            return array('message' => 'Event not found');
+        }
+
+        $data = array();
+        $get->bind_result($evt_id, $evt_nama, $evt_deskripsi, $evt_tanggal, $evt_kuota, $evt_poster, $evt_createdDate, $evt_lokasi, $evc_name, $usr_nohp);
+        while($get->fetch()){
+            $desc = substr($evt_deskripsi, 0, 200) . '...';
+            $data[] = ['evt_id' => $evt_id, 'evt_nama' => $evt_nama, 'evt_deskripsi' => $desc, 'evt_tanggal' => $evt_tanggal,
+                'evt_kuota' => $evt_kuota, 'evt_poster' => $evt_poster, 'evt_createdDate' => $evt_createdDate,
+                'evt_lokasi' => $evt_lokasi, 'evc_name' => $evc_name, 'usr_nohp' => $usr_nohp];
+        }
+
+        usort($data, function($a, $b){
+            return $b['evt_createdDate'] <=> $a['evt_createdDate'];
+        });
+
+        return array_slice($data, 0, 3);
+    }
+
+    public function getEventHosts($evt_id){
+        $evt_id = mysqli_real_escape_string($this->connect, $evt_id);
+
+        $get = $this->connect->prepare('SELECT hst_name, hst_pic FROM tbl_host WHERE evt_id = ?');
+        $get->bind_param('i', $evt_id);
+        $get->execute();
+        $get->store_result();
+        if($get->num_rows == 0){
+            return array('message' => 'Data pembicara tidak ditemukan');
+        }
+
+        $data = array();
+        $get->bind_result($hst_name, $hst_pic);
+        while($get->fetch()){
+            $data[] = ['hst_name' => $hst_name, 'hst_pic' => $hst_pic];
+        }
+
+        return array_slice($data, 0, 2);
+    }
+
+    public function pendaftaranEventAuto($usr_username, $evt_id, $epf_jumlah){
+        $usr_username = mysqli_real_escape_string($this->connect, $usr_username);
+        $get = $this->connect->prepare('SELECT usr_id FROM tbl_user WHERE usr_username = ?');
+        $get->bind_param('s', $usr_username);
+        $get->execute();
+        $get->store_result();
+        if($get->num_rows == 0){
+            return false;
+        }
+
+        $data = array();
+        $get->bind_result($usr_id);
+
         $usr_id = mysqli_real_escape_string($this->connect, $usr_id);
         $evt_id = mysqli_real_escape_string($this->connect, $evt_id);
         $epf_jumlah = mysqli_real_escape_string($this->connect, $epf_jumlah);
