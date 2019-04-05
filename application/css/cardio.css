@@ -676,7 +676,7 @@ section {
 }
 
 .pricings .pricing .box-main a.btn {
-	margin-top: 150px;
+	margin-top: 70px;
 }
 
 .pricings .pricing .box-third img {
@@ -1049,7 +1049,7 @@ footer .social-footer li:hover a {
 	font-size: 16px;
 	position: relative;
 	left: 0;
-	height: 20px;
+	height: 60px;
 	padding: 20px 30px;
 	border: 1px;
 	border-radius: 0;
@@ -1086,8 +1086,38 @@ footer .social-footer li:hover a {
 	color: #fff;
 }
 
-.form-control.form-white:focus {
+.form-control.form-white {
 	background: rgba(255,255,255,0.2);
+}
+
+.form-control.form-black {
+	color: #000;
+	border: 2px solid white;
+	background: transparent;
+	-webkit-transition: background-color 0.3s;
+	transition: background-color 0.3s;
+}
+
+.form-control.form-black::-webkit-input-placeholder {
+	/* WebKit browsers */
+	color: #000;
+}
+
+.form-control.form-black:-moz-placeholder {
+	opacity: 1;
+	/* Mozilla Firefox 4 to 18 */
+	color: #000;
+}
+
+.form-control.form-black::-moz-placeholder {
+	opacity: 1;
+	/* Mozilla Firefox 19+ */
+	color: #000;
+}
+
+.form-control.form-black:-ms-input-placeholder {
+	/* Internet Explorer 10+ */
+	color: #000;
 }
 
 /* Popup */
