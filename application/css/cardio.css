@@ -558,6 +558,15 @@ section {
 	transition: background-image 0.6s linear 0.3s;
 }
 
+#ed-background {
+	height: 400px;
+	background: #00a8ff url('../img/coding.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-transition: background-image 0.6s linear 0.3s;
+	transition: background-image 0.6s linear 0.3s;
+}
+
 .owl-pricing img {
 	width: 100%;
 }
